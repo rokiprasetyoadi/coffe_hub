@@ -1,262 +1,796 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<title>Dashboard | Klorofil - Free Bootstrap Dashboard Template</title>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<!-- VENDOR CSS -->
-	<link rel="stylesheet" href="<?php echo base_url('assets/back_end/bootstrap/css/bootstrap.min.css') ?>">
-	<link rel="stylesheet" href="<?php echo base_url('assets/back_end/font-awesome/css/font-awesome.min.css') ?>">
-	<link rel="stylesheet" href="<?php echo base_url('assets/back_end/linearicons/style.css') ?>">
-	<link rel="stylesheet" href="<?php echo base_url('assets/back_end/chartist/css/chartist-custom.css') ?>">
-	<!-- MAIN CSS -->
-	<link rel="stylesheet" href="<?php echo base_url('assets/back_end/css/main.css') ?>">
-	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
-	<link rel="stylesheet" href="<?php echo base_url('assets/back_end/css/demo.css') ?>">
-	<!-- GOOGLE FONTS -->
-	<link href="<?php echo base_url('assets/back_end/css/font_googleapis.css') ?>" rel="stylesheet">
-	<!-- ICONS -->
-	<link rel="apple-touch-icon" sizes="76x76" href="<?php echo base_url('assets/back_end/img/apple-icon.png') ?>">
-	<link rel="icon" type="image/png" sizes="96x96" href="<?php echo base_url('assets/back_end/img/favicon.png') ?>">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+
+    <meta http-equiv=”X-UA-Compatible” content=”IE=EmulateIE9”>
+    <meta http-equiv=”X-UA-Compatible” content=”IE=9”>
+
+    <link rel="shortcut icon" href="<?= base_url('assets/back_end/images/Faviconn.png') ?>">
+
+    <title>Dashboard | Coffee-HUB</title>
+
+    <!--Core CSS -->
+    <link href="<?php echo base_url('assets/back_end/bs3/css/bootstrap.min.css') ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/back_end/js/jquery-ui/jquery-ui-1.10.1.custom.min.css') ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/back_end/css/bootstrap-reset.css') ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/back_end/font-awesome/css/font-awesome.css') ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/back_end/js/jvector-map/jquery-jvectormap-1.2.2.css') ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/back_end/css/clndr.css') ?>" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url('assets/back_end/js/data-tables/DT_bootstrap.css') ?>" />
+    <!--clock css-->
+    <link href="<?php echo base_url('assets/back_end/js/css3clock/css/style.css') ?>" rel="stylesheet">
+    <!--Morris Chart CSS -->
+    <link rel="stylesheet" href="<?php echo base_url('assets/back_end/js/morris-chart/morris.css') ?>">
+    <!-- Custom styles for this template -->
+    <link href="<?php echo base_url('assets/back_end/css/style.css') ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/back_end/css/style-responsive.css') ?>" rel="stylesheet" />
+
+    <link rel="stylesheet" href="<?php echo base_url('assets/back_end/fancybox/jquery.fancybox.min.css') ?>" />
+
 </head>
-
 <body>
-	<!-- WRAPPER -->
-	<div id="wrapper">
-		<!-- NAVBAR -->
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="brand">
-				<a href="#"><img src="<?php echo base_url('assets/back_end/img/logo-dark3.png') ?>" alt="Klorofil Logo" class="img-responsive logo"></a>
-			</div>
-			<div class="container-fluid">
-				<div class="navbar-btn">
-					<button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
-				</div>
-				<!--
-				<form class="navbar-form navbar-left">
-					<div class="input-group">
-						<input type="text" value="" class="form-control" placeholder="Search dashboard...">
-						<span class="input-group-btn"><button type="button" class="btn btn-primary">Go</button></span>
-					</div>
-				</form>
-			-->
-				<div id="navbar-menu">
-					<ul class="nav navbar-nav navbar-right">
-						<!--<li class="dropdown">
-							<a href="#" class="dropdown-toggle icon-menu" data-toggle="dropdown">
-								<i class="lnr lnr-alarm"></i>
-								<span class="badge bg-danger">5</span>
-							</a>
-							<ul class="dropdown-menu notifications">
-								<li><a href="#" class="notification-item"><span class="dot bg-warning"></span>System space is almost full</a></li>
-								<li><a href="#" class="notification-item"><span class="dot bg-danger"></span>You have 9 unfinished tasks</a></li>
-								<li><a href="#" class="notification-item"><span class="dot bg-success"></span>Monthly report is available</a></li>
-								<li><a href="#" class="notification-item"><span class="dot bg-warning"></span>Weekly meeting in 1 hour</a></li>
-								<li><a href="#" class="notification-item"><span class="dot bg-success"></span>Your request has been approved</a></li>
-								<li><a href="#" class="more">See all notifications</a></li>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="lnr lnr-question-circle"></i> <span>Help</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Basic Use</a></li>
-								<li><a href="#">Working With Data</a></li>
-								<li><a href="#">Security</a></li>
-								<li><a href="#">Troubleshooting</a></li>
-							</ul>
-						</li>-->
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="<?php echo base_url('assets/back_end/img/adm-logo.png') ?>" class="img-circle" alt="Avatar"> <span style="margin-left: 10px;">Samuel</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
-							<ul class="dropdown-menu">
-								<li><a href="#"><i class="lnr lnr-user"></i> <span>My Profile</span></a></li>
-								<!--<li><a href="#"><i class="lnr lnr-envelope"></i> <span>Message</span></a></li>
-								<li><a href="#"><i class="lnr lnr-cog"></i> <span>Settings</span></a></li>-->
-								<li><a href="#"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<!-- END NAVBAR -->
-		<!-- LEFT SIDEBAR -->
-		<div id="sidebar-nav" class="sidebar">
-			<div class="sidebar-scroll">
-				<nav>
-					<ul class="nav">
-						<li><a href="index.html" class="active"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
-						<li><a href="elements.html" class=""><i class="fa fa-calendar"></i> <span>Agenda</span></a></li>
-						<li><a href="charts.html" class=""><i class="fa fa-book"></i> <span>E - Katalog</span></a></li>
-						<!--
-						<li><a href="panels.html" class=""><i class="lnr lnr-cog"></i> <span>Panels</span></a></li>
-						<li><a href="notifications.html" class=""><i class="lnr lnr-alarm"></i> <span>Notifications</span></a></li>
-						<li>
-							<a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>Pages</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
-							<div id="subPages" class="collapse ">
-								<ul class="nav">
-									<li><a href="page-profile.html" class="">Profile</a></li>
-									<li><a href="page-login.html" class="">Login</a></li>
-									<li><a href="page-lockscreen.html" class="">Lockscreen</a></li>
-								</ul>
-							</div>
-						</li>
-						<li><a href="tables.html" class=""><i class="lnr lnr-dice"></i> <span>Tables</span></a></li>
-						<li><a href="typography.html" class=""><i class="lnr lnr-text-format"></i> <span>Typography</span></a></li>
-						<li><a href="icons.html" class=""><i class="lnr lnr-linearicons"></i> <span>Icons</span></a></li>
-					-->
-					</ul>
-				</nav>
-			</div>
-		</div>
-		<!-- END LEFT SIDEBAR -->
-		<!-- MAIN -->
-		<div class="main">
-			<!-- MAIN CONTENT -->
-			<div class="main-content">
-				<div class="container-fluid">
-					
-					<?= $contents; ?>
+<section id="container">
+<!--header start-->
+<header class="header fixed-top clearfix">
+<!--logo start-->
+<div class="brand">
 
-				</div>
-			</div>
-			<!-- END MAIN CONTENT -->
-		</div>
-		<!-- END MAIN -->
-		<div class="clearfix"></div>
-		<footer>
-			<div class="container-fluid">
-				<p class="copyright">&copy; 2017 <a href="https://www.themeineed.com" target="_blank">Theme I Need</a>. All Rights Reserved.</p>
-			</div>
-		</footer>
-	</div>
-	<!-- END WRAPPER -->
-	<!-- Javascript -->
-	<script src="<?php echo base_url('assets/back_end/jquery/jquery.min.js') ?>"></script>
-	<script src="<?php echo base_url('assets/back_end/bootstrap/js/bootstrap.min.js') ?>"></script>
-	<script src="<?php echo base_url('assets/back_end/jquery-slimscroll/jquery.slimscroll.min.js') ?>"></script>
-	<script src="<?php echo base_url('assets/back_end/jquery.easy-pie-chart/jquery.easypiechart.min.js') ?>"></script>
-	<script src="<?php echo base_url('assets/back_end/chartist/js/chartist.min.js') ?>"></script>
-	<script src="<?php echo base_url('assets/back_end/scripts/klorofil-common.js') ?>"></script>
-	<script>
-	$(function() {
-		var data, options;
+    <a href="#" class="logo">
+        <img style="width: 180px;" src="<?= base_url('assets/back_end/images/logo-DASH.png') ?>" alt="">
+    </a>
+    <div class="sidebar-toggle-box">
+        <div class="fa fa-bars"></div>
+    </div>
+</div>
+<!--logo end-->
 
-		// headline charts
-		data = {
-			labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-			series: [
-				[23, 29, 24, 40, 25, 24, 35],
-				[14, 25, 18, 34, 29, 38, 44],
-			]
-		};
+<div class="nav notify-row" id="top_menu" hidden>
+    <!--  notification start -->
+    <ul class="nav top-menu">
+        <!-- settings start -->
+        <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <i class="fa fa-tasks"></i>
+                <span class="badge bg-success">8</span>
+            </a>
+            <ul class="dropdown-menu extended tasks-bar">
+                <li>
+                    <p class="">You have 8 pending tasks</p>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="task-info clearfix">
+                            <div class="desc pull-left">
+                                <h5>Target Sell</h5>
+                                <p>25% , Deadline  12 June’13</p>
+                            </div>
+                                    <span class="notification-pie-chart pull-right" data-percent="45">
+                            <span class="percent"></span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="task-info clearfix">
+                            <div class="desc pull-left">
+                                <h5>Product Delivery</h5>
+                                <p>45% , Deadline  12 June’13</p>
+                            </div>
+                                    <span class="notification-pie-chart pull-right" data-percent="78">
+                            <span class="percent"></span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="task-info clearfix">
+                            <div class="desc pull-left">
+                                <h5>Payment collection</h5>
+                                <p>87% , Deadline  12 June’13</p>
+                            </div>
+                                    <span class="notification-pie-chart pull-right" data-percent="60">
+                            <span class="percent"></span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="task-info clearfix">
+                            <div class="desc pull-left">
+                                <h5>Target Sell</h5>
+                                <p>33% , Deadline  12 June’13</p>
+                            </div>
+                                    <span class="notification-pie-chart pull-right" data-percent="90">
+                            <span class="percent"></span>
+                            </span>
+                        </div>
+                    </a>
+                </li>
 
-		options = {
-			height: 300,
-			showArea: true,
-			showLine: false,
-			showPoint: false,
-			fullWidth: true,
-			axisX: {
-				showGrid: false
-			},
-			lineSmooth: false,
-		};
+                <li class="external">
+                    <a href="#">See All Tasks</a>
+                </li>
+            </ul>
+        </li>
+        <!-- settings end -->
+        <!-- inbox dropdown start-->
+        <li id="header_inbox_bar" class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <i class="fa fa-envelope-o"></i>
+                <span class="badge bg-important">4</span>
+            </a>
+            <ul class="dropdown-menu extended inbox">
+                <li>
+                    <p class="red">You have 4 Mails</p>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="photo"><img alt="avatar" src="<?= base_url('assets/back_end/images/avatar-mini.jpg') ?>"></span>
+                                <span class="subject">
+                                <span class="from">Jonathan Smith</span>
+                                <span class="time">Just now</span>
+                                </span>
+                                <span class="message">
+                                    Hello, this is an example msg.
+                                </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="photo"><img alt="avatar" src="images/avatar-mini-2.jpg"></span>
+                                <span class="subject">
+                                <span class="from">Jane Doe</span>
+                                <span class="time">2 min ago</span>
+                                </span>
+                                <span class="message">
+                                    Nice admin template
+                                </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="photo"><img alt="avatar" src="images/avatar-mini-3.jpg"></span>
+                                <span class="subject">
+                                <span class="from">Tasi sam</span>
+                                <span class="time">2 days ago</span>
+                                </span>
+                                <span class="message">
+                                    This is an example msg.
+                                </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="photo"><img alt="avatar" src="images/avatar-mini.jpg"></span>
+                                <span class="subject">
+                                <span class="from">Mr. Perfect</span>
+                                <span class="time">2 hour ago</span>
+                                </span>
+                                <span class="message">
+                                    Hi there, its a test
+                                </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">See all messages</a>
+                </li>
+            </ul>
+        </li>
+        <!-- inbox dropdown end -->
+        <!-- notification dropdown start-->
+        <li id="header_notification_bar" class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
 
-		new Chartist.Line('#headline-chart', data, options);
+                <i class="fa fa-bell-o"></i>
+                <span class="badge bg-warning">3</span>
+            </a>
+            <ul class="dropdown-menu extended notification">
+                <li>
+                    <p>Notifications</p>
+                </li>
+                <li>
+                    <div class="alert alert-info clearfix">
+                        <span class="alert-icon"><i class="fa fa-bolt"></i></span>
+                        <div class="noti-info">
+                            <a href="#"> Server #1 overloaded.</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="alert alert-danger clearfix">
+                        <span class="alert-icon"><i class="fa fa-bolt"></i></span>
+                        <div class="noti-info">
+                            <a href="#"> Server #2 overloaded.</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="alert alert-success clearfix">
+                        <span class="alert-icon"><i class="fa fa-bolt"></i></span>
+                        <div class="noti-info">
+                            <a href="#"> Server #3 overloaded.</a>
+                        </div>
+                    </div>
+                </li>
 
+            </ul>
+        </li>
+        <!-- notification dropdown end -->
+    </ul>
+    <!--  notification end -->
+</div>
+<div class="top-nav clearfix">
+    <!--search & user info start-->
+    <ul class="nav pull-right top-menu" style="margin-right: 30px;">
+        <!-- <li>
+            <input type="text" class="form-control search" placeholder=" Search">
+        </li> -->
+        <!-- user login dropdown start-->
+        <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <img alt="" src="<?php echo base_url() ?>assets/back_end/images/adm-logo.png">
+                <span style="margin-left: 10px;" class="username"><?php echo $this->session->userdata('admin_nama') ?></span>
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu extended logout">
+                <li><a href="<?php echo base_url('admin/profile') ?>"><i class=" fa fa-suitcase"></i>Profile</a></li>
+                <!-- <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li> -->
+                <li><a href="<?php echo base_url('back_end/Authentication/logout') ?>"><i class="fa fa-key"></i> Log Out</a></li>
+            </ul>
+        </li>
 
-		// visits trend charts
-		data = {
-			labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-			series: [{
-				name: 'series-real',
-				data: [200, 380, 350, 320, 410, 450, 570, 400, 555, 620, 750, 900],
-			}, {
-				name: 'series-projection',
-				data: [240, 350, 360, 380, 400, 450, 480, 523, 555, 600, 700, 800],
-			}]
-		};
+        <div hidden>
+        <li>
+            <div class="toggle-right-box">
+                <div class="fa fa-bars"></div>
+            </div>
+        </li>
+        </div>
+    </ul>
+    <!--search & user info end-->
+</div>
+</header>
+<!--header end-->
+<!--sidebar start-->
+<aside>
+    <div id="sidebar" class="nav-collapse">
+        <!-- sidebar menu start-->
+        <div class="leftside-navigation">
+            <ul class="sidebar-menu" id="nav-accordion">
+                <li>
+                    <a href="<?php echo base_url('admin') ?>">
+                        <i class="fa fa-dashboard"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="fa fa-picture-o"></i>
+                        <span>Personalisasi</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="<?php echo base_url('admin/karyawan') ?>">Data Karyawan</a></li>
+                        <li><a href="<?php echo base_url('admin/galeri') ?>">Galeri</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="fa fa-laptop"></i>
+                        <span>Data Master</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="<?php echo base_url('admin/barang') ?>">Data Barang</a></li>
+                        <li><a href="<?php echo base_url('admin/kategori') ?>">Data Kategori</a></li>
+                        <li><a href="<?php echo base_url('admin/customers') ?>">Data Customer</a></li>
+                        <li><a href="<?php echo base_url('admin/supplier') ?>">Data Supplier</a></li>
+                        <li><a href="<?php echo base_url('admin/barang_masuk') ?>">Data Barang Masuk</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span>Transaksi</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="<?php echo base_url('admin/penjualan') ?>">Penjualan</a></li>
+                        <li><a href="<?php echo base_url('admin/pembayaran') ?>">Verifikasi Pembayaran</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="<?php echo base_url('admin/pengiriman_barang') ?>">
+                        <i class="fa fa-truck"></i>
+                        <span>Pengiriman Barang</span>
+                    </a>
+                </li>
+                <li class="sub-menu">
+                    <a href="<?php echo base_url('admin/laporan_penjualan') ?>">
+                        <i class="fa fa-dollar"></i>
+                        <span>Laporan Penjualan</span>
+                    </a>
+                </li>
 
-		options = {
-			fullWidth: true,
-			lineSmooth: false,
-			height: "270px",
-			low: 0,
-			high: 'auto',
-			series: {
-				'series-projection': {
-					showArea: true,
-					showPoint: false,
-					showLine: false
-				},
-			},
-			axisX: {
-				showGrid: false,
+            </ul>
+        </div>
+        <!-- sidebar menu end-->
+    </div>
+</aside>
+<!--sidebar end-->
+<!--main content start-->
+<section id="main-content">
+<section class="wrapper">
 
-			},
-			axisY: {
-				showGrid: false,
-				onlyInteger: true,
-				offset: 0,
-			},
-			chartPadding: {
-				left: 20,
-				right: 20
-			}
-		};
+<!--mini statistics start-->
+<div class="row" hidden>
+    <div class="col-md-3">
+        <section class="panel">
+            <div class="panel-body">
+                <div class="top-stats-panel">
+                    <div class="gauge-canvas">
+                        <h4 class="widget-h">Monthly Expense</h4>
+                        <canvas width=160 height=100 id="gauge"></canvas>
+                    </div>
+                    <ul class="gauge-meta clearfix">
+                        <li id="gauge-textfield" class="pull-left gauge-value"></li>
+                        <li class="pull-right gauge-title">Safe</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-md-3">
+        <section class="panel">
+            <div class="panel-body">
+                <div class="top-stats-panel">
+                    <div class="daily-visit">
+                        <h4 class="widget-h">Daily Visitors</h4>
+                        <div id="daily-visit-chart" style="width:100%; height: 100px; display: block">
 
-		new Chartist.Line('#visits-trends-chart', data, options);
+                        </div>
+                        <ul class="chart-meta clearfix">
+                            <li class="pull-left visit-chart-value">3233</li>
+                            <li class="pull-right visit-chart-title"><i class="fa fa-arrow-up"></i> 15%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-md-3">
+        <section class="panel">
+            <div class="panel-body">
+                <div class="top-stats-panel">
+                    <h4 class="widget-h">Top Advertise</h4>
+                    <div class="sm-pie">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-md-3">
+        <section class="panel">
+            <div class="panel-body">
+                <div class="top-stats-panel">
+                    <h4 class="widget-h">Daily Sales</h4>
+                    <div class="bar-stats">
+                        <ul class="progress-stat-bar clearfix">
+                            <li data-percent="50%"><span class="progress-stat-percent pink"></span></li>
+                            <li data-percent="90%"><span class="progress-stat-percent"></span></li>
+                            <li data-percent="70%"><span class="progress-stat-percent yellow-b"></span></li>
+                        </ul>
+                        <ul class="bar-legend">
+                            <li><span class="bar-legend-pointer pink"></span> New York</li>
+                            <li><span class="bar-legend-pointer green"></span> Los Angels</li>
+                            <li><span class="bar-legend-pointer yellow-b"></span> Dallas</li>
+                        </ul>
+                        <div class="daily-sales-info">
+                            <span class="sales-count">1200 </span> <span class="sales-label">Products Sold</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<!--mini statistics end-->
+    <div class="row" hidden>
+    <div class="col-md-8">
+        <!--earning graph start-->
+        <section class="panel">
+            <header class="panel-heading">
+                Earning Graph <span class="tools pull-right">
+            <a href="javascript:;" class="fa fa-chevron-down"></a>
+            <a href="javascript:;" class="fa fa-cog"></a>
+            <a href="javascript:;" class="fa fa-times"></a>
+            </span>
+            </header>
+            <div class="panel-body">
 
+                <div id="graph-area" class="main-chart">
+                </div>
+                <div class="region-stats">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="region-earning-stats">
+                                This year total earning <span>$68,4545,454</span>
+                            </div>
+                            <ul class="clearfix location-earning-stats">
+                                <li class="stat-divider">
+                                    <span class="first-city">$734503</span>
+                                    Rocky Mt,NC </li>
+                                <li class="stat-divider">
+                                    <span class="second-city">$734503</span>
+                                    Dallas/FW,TX </li>
+                                <li>
+                                    <span class="third-city">$734503</span>
+                                    Millville,NJ </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5">
+                            <div id="world-map" class="vector-stat">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--earning graph end-->
+    </div>
+    </div>
 
-		// visits chart
-		data = {
-			labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-			series: [
-				[6384, 6342, 5437, 2764, 3958, 5068, 7654]
-			]
-		};
+<?= $contents; ?>
 
-		options = {
-			height: 300,
-			axisX: {
-				showGrid: false
-			},
-		};
+</div>
+</section>
+</section>
 
-		new Chartist.Bar('#visits-chart', data, options);
+<!-- Modal Delete-->
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Apakah anda yakin?</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">Data yang dihapus tidak akan bisa dikembalikan.</div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+        <a id="btn-delete" class="btn btn-danger" href="#">Delete</a>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!--main content end-->
+<!--right sidebar start-->
+<div class="right-sidebar" hidden>
+<div class="search-row">
+    <input type="text" placeholder="Search" class="form-control">
+</div>
+<div class="right-stat-bar">
+<ul class="right-side-accordion">
+<li class="widget-collapsible">
+    <a href="#" class="head widget-head red-bg active clearfix">
+        <span class="pull-left">work progress (5)</span>
+        <span class="pull-right widget-collapse"><i class="ico-minus"></i></span>
+    </a>
+    <ul class="widget-container">
+        <li>
+            <div class="prog-row side-mini-stat clearfix">
+                <div class="side-graph-info">
+                    <h4>Target sell</h4>
+                    <p>
+                        25%, Deadline 12 june 13
+                    </p>
+                </div>
+                <div class="side-mini-graph">
+                    <div class="target-sell">
+                    </div>
+                </div>
+            </div>
+            <div class="prog-row side-mini-stat">
+                <div class="side-graph-info">
+                    <h4>product delivery</h4>
+                    <p>
+                        55%, Deadline 12 june 13
+                    </p>
+                </div>
+                <div class="side-mini-graph">
+                    <div class="p-delivery">
+                        <div class="sparkline" data-type="bar" data-resize="true" data-height="30" data-width="90%" data-bar-color="#39b7ab" data-bar-width="5" data-data="[200,135,667,333,526,996,564,123,890,564,455]">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prog-row side-mini-stat">
+                <div class="side-graph-info payment-info">
+                    <h4>payment collection</h4>
+                    <p>
+                        25%, Deadline 12 june 13
+                    </p>
+                </div>
+                <div class="side-mini-graph">
+                    <div class="p-collection">
+                        <span class="pc-epie-chart" data-percent="45">
+                        <span class="percent"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="prog-row side-mini-stat">
+                <div class="side-graph-info">
+                    <h4>delivery pending</h4>
+                    <p>
+                        44%, Deadline 12 june 13
+                    </p>
+                </div>
+                <div class="side-mini-graph">
+                    <div class="d-pending">
+                    </div>
+                </div>
+            </div>
+            <div class="prog-row side-mini-stat">
+                <div class="col-md-12">
+                    <h4>total progress</h4>
+                    <p>
+                        50%, Deadline 12 june 13
+                    </p>
+                    <div class="progress progress-xs mtop10">
+                        <div style="width: 50%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" role="progressbar" class="progress-bar progress-bar-info">
+                            <span class="sr-only">50% Complete</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</li>
+<li class="widget-collapsible">
+    <a href="#" class="head widget-head terques-bg active clearfix">
+        <span class="pull-left">contact online (5)</span>
+        <span class="pull-right widget-collapse"><i class="ico-minus"></i></span>
+    </a>
+    <ul class="widget-container">
+        <li>
+            <div class="prog-row">
+                <div class="user-thumb">
+                    <a href="#"><img src="images/avatar1_small.jpg" alt=""></a>
+                </div>
+                <div class="user-details">
+                    <h4><a href="#">Jonathan Smith</a></h4>
+                    <p>
+                        Work for fun
+                    </p>
+                </div>
+                <div class="user-status text-danger">
+                    <i class="fa fa-comments-o"></i>
+                </div>
+            </div>
+            <div class="prog-row">
+                <div class="user-thumb">
+                    <a href="#"><img src="images/avatar1.jpg" alt=""></a>
+                </div>
+                <div class="user-details">
+                    <h4><a href="#">Anjelina Joe</a></h4>
+                    <p>
+                        Available
+                    </p>
+                </div>
+                <div class="user-status text-success">
+                    <i class="fa fa-comments-o"></i>
+                </div>
+            </div>
+            <div class="prog-row">
+                <div class="user-thumb">
+                    <a href="#"><img src="images/chat-avatar2.jpg" alt=""></a>
+                </div>
+                <div class="user-details">
+                    <h4><a href="#">John Doe</a></h4>
+                    <p>
+                        Away from Desk
+                    </p>
+                </div>
+                <div class="user-status text-warning">
+                    <i class="fa fa-comments-o"></i>
+                </div>
+            </div>
+            <div class="prog-row">
+                <div class="user-thumb">
+                    <a href="#"><img src="images/avatar1_small.jpg" alt=""></a>
+                </div>
+                <div class="user-details">
+                    <h4><a href="#">Mark Henry</a></h4>
+                    <p>
+                        working
+                    </p>
+                </div>
+                <div class="user-status text-info">
+                    <i class="fa fa-comments-o"></i>
+                </div>
+            </div>
+            <div class="prog-row">
+                <div class="user-thumb">
+                    <a href="#"><img src="images/avatar1.jpg" alt=""></a>
+                </div>
+                <div class="user-details">
+                    <h4><a href="#">Shila Jones</a></h4>
+                    <p>
+                        Work for fun
+                    </p>
+                </div>
+                <div class="user-status text-danger">
+                    <i class="fa fa-comments-o"></i>
+                </div>
+            </div>
+            <p class="text-center">
+                <a href="#" class="view-btn">View all Contacts</a>
+            </p>
+        </li>
+    </ul>
+</li>
+<li class="widget-collapsible">
+    <a href="#" class="head widget-head purple-bg active">
+        <span class="pull-left"> recent activity (3)</span>
+        <span class="pull-right widget-collapse"><i class="ico-minus"></i></span>
+    </a>
+    <ul class="widget-container">
+        <li>
+            <div class="prog-row">
+                <div class="user-thumb rsn-activity">
+                    <i class="fa fa-clock-o"></i>
+                </div>
+                <div class="rsn-details ">
+                    <p class="text-muted">
+                        just now
+                    </p>
+                    <p>
+                        <a href="#">Jim Doe </a>Purchased new equipments for zonal office setup
+                    </p>
+                </div>
+            </div>
+            <div class="prog-row">
+                <div class="user-thumb rsn-activity">
+                    <i class="fa fa-clock-o"></i>
+                </div>
+                <div class="rsn-details ">
+                    <p class="text-muted">
+                        2 min ago
+                    </p>
+                    <p>
+                        <a href="#">Jane Doe </a>Purchased new equipments for zonal office setup
+                    </p>
+                </div>
+            </div>
+            <div class="prog-row">
+                <div class="user-thumb rsn-activity">
+                    <i class="fa fa-clock-o"></i>
+                </div>
+                <div class="rsn-details ">
+                    <p class="text-muted">
+                        1 day ago
+                    </p>
+                    <p>
+                        <a href="#">Jim Doe </a>Purchased new equipments for zonal office setup
+                    </p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</li>
+<li class="widget-collapsible">
+    <a href="#" class="head widget-head yellow-bg active">
+        <span class="pull-left"> shipment status</span>
+        <span class="pull-right widget-collapse"><i class="ico-minus"></i></span>
+    </a>
+    <ul class="widget-container">
+        <li>
+            <div class="col-md-12">
+                <div class="prog-row">
+                    <p>
+                        Full sleeve baby wear (SL: 17665)
+                    </p>
+                    <div class="progress progress-xs mtop10">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                            <span class="sr-only">40% Complete</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="prog-row">
+                    <p>
+                        Full sleeve baby wear (SL: 17665)
+                    </p>
+                    <div class="progress progress-xs mtop10">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                            <span class="sr-only">70% Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</li>
+</ul>
 
-		// real-time pie chart
-		var sysLoad = $('#system-load').easyPieChart({
-			size: 130,
-			barColor: function(percent) {
-				return "rgb(" + Math.round(200 * percent / 100) + ", " + Math.round(200 * (1.1 - percent / 100)) + ", 0)";
-			},
-			trackColor: 'rgba(245, 245, 245, 0.8)',
-			scaleColor: false,
-			lineWidth: 5,
-			lineCap: "square",
-			animate: 800
-		});
+</div>
 
-		var updateInterval = 3000; // in milliseconds
+</div>
+<!--right sidebar end-->
+</section>
+    <!-- Placed js at the end of the document so the pages load faster -->
+    <!--Core js-->
+    <script src="<?php echo base_url('assets/back_end/js/jquery.js') ?>"></script>
+    <script src="<?php echo base_url('assets/back_end/js/jquery-ui/jquery-ui-1.10.1.custom.min.js') ?>"></script>
+    <script src="<?php echo base_url('assets/back_end/bs3/js/bootstrap.min.js') ?>"></script>
+    <script src="<?php echo base_url('assets/back_end/js/jquery.dcjqaccordion.2.7.js') ?>"></script>
+    <script src="<?php echo base_url('assets/back_end/js/jquery.scrollTo.min.js') ?>"></script>
+    <script src="<?php echo base_url('assets/back_end/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js') ?>"></script>
+    <script src="<?php echo base_url('assets/back_end/js/jquery.nicescroll.js') ?>"></script>
+    <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js"></script><![endif]-->
+    <script src="<?php echo base_url('assets/back_end/js/skycons/skycons.js') ?>"></script>
+    <script src="<?php echo base_url('assets/back_end/js/jquery.scrollTo/jquery.scrollTo.js') ?>"></script>
+    <script src="<?php echo base_url('assets/back_end/cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js') ?>">
+    </script>
+    <script src="<?php echo base_url('assets/back_end/js/calendar/clndr.js') ?>"></script>
+    <script src="<?php echo base_url('assets/back_end/cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js') ?>">
+    </script>
+    <script src="<?php echo base_url('assets/back_end/js/calendar/moment-2.2.1.js') ?>"></script>
+    <script src="<?php echo base_url('assets/back_end/js/evnt.calendar.init.js') ?>"></script>
+    <script src="<?php echo base_url('assets/back_end/js/jvector-map/jquery-jvectormap-1.2.2.min.js') ?>"></script>
+    <script src="<?php echo base_url('assets/back_end/js/jvector-map/jquery-jvectormap-us-lcc-en.js') ?>"></script>
+    <script src="<?php echo base_url('assets/back_end/js/gauge/gauge.js') ?>"></script>
+    <!--clock init-->
+    <script src="<?php echo base_url('assets/back_end/js/css3clock/js/css3clock.js') ?>"></script>
+    <!--Easy Pie Chart-->
+    <script src="<?php echo base_url('assets/back_end/js/easypiechart/jquery.easypiechart.js') ?>"></script>
+    <!--Sparkline Chart-->
+    <script src="<?php echo base_url('assets/back_end/js/sparkline/jquery.sparkline.js') ?>"></script>
+    <!--Morris Chart-->
+    <script src="<?php echo base_url('assets/back_end/js/morris-chart/morris.js') ?>"></script>
+    <script src="<?php echo base_url('assets/back_end/js/morris-chart/raphael-min.js') ?>"></script>
+    <!--jQuery Flot Chart-->
+    <script src="<?php echo base_url('assets/back_end/js/flot-chart/jquery.flot.js') ?>"></script>
+    <script src="<?php echo base_url('assets/back_end/js/flot-chart/jquery.flot.tooltip.min.js') ?>"></script>
+    <script src="<?php echo base_url('assets/back_end/js/flot-chart/jquery.flot.resize.js') ?>"></script>
+    <script src="<?php echo base_url('assets/back_end/js/flot-chart/jquery.flot.pie.js') ?>"></script>
+    <script src="<?php echo base_url('assets/back_end/js/flot-chart/jquery.flot.animator.min.js') ?>"></script>
+    <script src="<?php echo base_url('assets/back_end/js/flot-chart/jquery.flot.growraf.js') ?>"></script>
 
-		setInterval(function() {
-			var randomVal;
-			randomVal = getRandomInt(0, 100);
+    <script src="<?php echo base_url('assets/back_end/js/dashboard.js') ?>"></script>
+    <script src="<?php echo base_url('assets/back_end/js/jquery.customSelect.min.js') ?>"></script>
 
-			sysLoad.data('easyPieChart').update(randomVal);
-			sysLoad.find('.percent').text(randomVal);
-		}, updateInterval);
+    <script type="text/javascript" src="<?php echo base_url('assets/back_end/js/data-tables/jquery.dataTables.js') ?>"></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/back_end/js/data-tables/DT_bootstrap.js') ?>"></script>
 
-		function getRandomInt(min, max) {
-			return Math.floor(Math.random() * (max - min + 1)) + min;
-		}
+    <!--common script init for all pages-->
+    <script src="<?php echo base_url('assets/back_end/js/scripts.js') ?>"></script>
+    <!--script for this page-->
 
-	});
-	</script>
+    <!--script for this page only-->
+    <script src="<?php echo base_url('assets/back_end/js/table-editable.js') ?>"></script>
+
+<!-- fancybox -->
+    <script src="<?php echo base_url('assets/back_end/fancybox/jquery.fancybox.min.js') ?>"></script>
+
+    <script>
+    jQuery(document).ready(function() {
+        EditableTable.init();
+    });
+    </script>
+
+    <script>
+      function deleteConfirm(url){
+        $('#btn-delete').attr('href', url);
+        $('#deleteModal').modal();
+      }
+    </script>
+
 </body>
-
 </html>
