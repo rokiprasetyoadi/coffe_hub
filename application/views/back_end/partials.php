@@ -235,7 +235,7 @@
         <!-- user login dropdown start-->
         <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                <img alt="" src="<?php echo base_url() ?>assets/back_end/images/adm-logo.png">
+                <img alt="" src="<?php echo base_url() ?>assets/back_end/images/logo-transparent.png">
                 <span style="margin-left: 10px;" class="username"><?php echo $this->session->userdata('admin_nama') ?></span>
                 <b class="caret"></b>
             </a>
@@ -271,48 +271,15 @@
                     </a>
                 </li>
                 <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class="fa fa-picture-o"></i>
-                        <span>Personalisasi</span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="<?php echo base_url('admin/karyawan') ?>">Data Karyawan</a></li>
-                        <li><a href="<?php echo base_url('admin/galeri') ?>">Galeri</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class="fa fa-laptop"></i>
-                        <span>Data Master</span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="<?php echo base_url('admin/barang') ?>">Data Barang</a></li>
-                        <li><a href="<?php echo base_url('admin/kategori') ?>">Data Kategori</a></li>
-                        <li><a href="<?php echo base_url('admin/customers') ?>">Data Customer</a></li>
-                        <li><a href="<?php echo base_url('admin/supplier') ?>">Data Supplier</a></li>
-                        <li><a href="<?php echo base_url('admin/barang_masuk') ?>">Data Barang Masuk</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class="fa fa-shopping-cart"></i>
-                        <span>Transaksi</span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="<?php echo base_url('admin/penjualan') ?>">Penjualan</a></li>
-                        <li><a href="<?php echo base_url('admin/pembayaran') ?>">Verifikasi Pembayaran</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="<?php echo base_url('admin/pengiriman_barang') ?>">
-                        <i class="fa fa-truck"></i>
-                        <span>Pengiriman Barang</span>
+                    <a href="<?php echo base_url('back_end/Agenda') ?>">
+                        <i class="fa fa-book"></i>
+                        <span>Agenda</span>
                     </a>
                 </li>
                 <li class="sub-menu">
-                    <a href="<?php echo base_url('admin/laporan_penjualan') ?>">
-                        <i class="fa fa-dollar"></i>
-                        <span>Laporan Penjualan</span>
+                    <a href="<?php echo base_url('back_end/ekatalog') ?>">
+                        <i class="fa fa-briefcase"></i>
+                        <span>E-Katalog</span>
                     </a>
                 </li>
 

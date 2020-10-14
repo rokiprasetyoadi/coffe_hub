@@ -3,7 +3,7 @@
             <div class="col-sm-12">
                 <section class="panel">
                     <header class="panel-heading">
-                        Data Agenda
+                        Data E-Katalog
                         <span class="tools pull-right">
                             <a href="javascript:;" class="fa fa-chevron-down"></a>
                             <a href="javascript:;" class="fa fa-cog"></a>
@@ -14,13 +14,13 @@
                         <div class="adv-table editable-table ">
                             <div class="clearfix">
                                 <div class="btn-group">
-                                    <a class="btn btn-primary" href="<?= site_url() ?>back_end/agenda/add">
+                                    <a class="btn btn-primary" href="<?= site_url() ?>back_end/ekatalog/add">
                                         Add New &nbsp;<i class="fa fa-plus"></i>
                                     </a>
                                 </div>
                                 <?= $this->session->flashdata('pesan'); ?>
                                 <div class="btn-group pull-right">
-                                    <a class="btn btn-info" href="<?= site_url() ?>back_end/agenda/print">
+                                    <a class="btn btn-info" href="<?= site_url() ?>back_end/ekatalog/print">
                                         Print &nbsp;<i class="fa fa-print"></i>
                                     </a>
                                 </div>
@@ -30,11 +30,12 @@
                                 <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Nama Agenda</th>
-                                    <th>Foto</th>
-                                    <th>Keterangan</th>
-                                    <th>Tempat</th>
-                                    <th>Tanggal | Jam</th>
+                                    <th>Nama Petani</th>
+                                    <th>Alamat</th>
+                                    <th>Kelompok Tani</th>
+                                    <th>No HP</th>
+                                    <th>Nama Kopi</th>
+                                    <th>Badan Usaha</th>
                                     <th>Edit</th>
                                     <th>Delete</th>
                                 </tr>
@@ -42,16 +43,17 @@
                                 <tbody>
                                     <?php 
                                     $i=1;
-                                    foreach ($agenda as $data):?>
+                                    foreach ($ekatalog as $data):?>
                                 <tr class="">
                                     <td><?= $i++ ?></td>
-                                    <td><?php echo $data->agenda_nama; ?></td>
-                                    <td><a href="<?= base_url('assets/upload/agenda/'.$data->agenda_img) ?>" data-fancybox data-caption="Agenda"> <img style="height: 50px; width: 50px;" src="<?= base_url('assets/upload/agenda/'.$data->agenda_img) ?>"></a></td>
-                                    <td><?php echo $data->agenda_keterangan; ?></td>
-                                    <td><?php echo $data->agenda_tempat; ?></td>
-                                    <td><?php echo $data->agenda_tanggal; ?>&nbsp;|&nbsp;<?php echo $data->agenda_jam; ?></td>
-                                    <td style="text-align: center;"><a class="edit" href="<?= site_url(); ?>back_end/agenda/edit/<?= $data->agenda_id ?>"><i class="fa fa-edit"></i></a></td>
-                                    <td style="text-align: center;"><a class="delete" onclick="deleteConfirm('<?= site_url(); ?>back_end/agenda/delete/<?= $data->agenda_id ?>')" href="#!"><i class="fa fa-trash-o"></i></a></td>
+                                    <td><?php echo $data->catalog_nama_petani; ?></td>
+                                    <td><?php echo $data->catalog_alamat; ?></td>
+                                    <td><?php echo $data->catalog_kelompok_tani; ?></td>
+                                    <td><?php echo $data->catalog_no_hp; ?></td>
+                                    <td><?php echo $data->catalog_nama_kopi; ?></td>
+                                    <td><?php echo $data->catalog_badan_usaha; ?></td>
+                                    <td style="text-align: center;"><a class="edit" href="<?= site_url(); ?>back_end/ekatalog/edit/<?= $data->catalog_id ?>"><i class="fa fa-edit"></i></a></td>
+                                    <td style="text-align: center;"><a class="delete" onclick="deleteConfirm('<?= site_url(); ?>back_end/ekatalog/delete/<?= $data->catalog_id ?>')" href="#!"><i class="fa fa-trash-o"></i></a></td>
                                 </tr>
                                 <?php endforeach; ?>
 

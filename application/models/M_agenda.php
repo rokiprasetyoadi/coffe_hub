@@ -82,7 +82,9 @@
             'agenda_nama' => htmlspecialchars($this->input->post('agenda_nama', true)),
             'agenda_img' => $this->_uploadImage(),
             'agenda_keterangan' => htmlspecialchars($this->input->post('agenda_keterangan', true)),
-            'agenda_tanggal' => htmlspecialchars($this->input->post('agenda_tanggal', true))
+            'agenda_tempat' => htmlspecialchars($this->input->post('agenda_tempat', true)),
+            'agenda_tanggal' => htmlspecialchars($this->input->post('agenda_tanggal', true)),
+            'agenda_jam' => htmlspecialchars($this->input->post('agenda_jam', true))
         ];
 
         $this->db->insert('agenda', $data); // query untuk insert data ke tabel barang
@@ -94,7 +96,9 @@
             'agenda_id' => htmlspecialchars($this->input->post('agenda_id', true)),
             'agenda_nama' => htmlspecialchars($this->input->post('agenda_nama', true)),
             'agenda_keterangan' => htmlspecialchars($this->input->post('agenda_keterangan', true)),
-            'agenda_tanggal' => htmlspecialchars($this->input->post('agenda_tanggal', true))
+            'agenda_tempat' => htmlspecialchars($this->input->post('agenda_tempat', true)),
+            'agenda_tanggal' => htmlspecialchars($this->input->post('agenda_tanggal', true)),
+            'agenda_jam' => htmlspecialchars($this->input->post('agenda_jam', true))
         ];
 
         $this->db->where('agenda_id', $this->input->post('agenda_id'));
@@ -112,13 +116,13 @@
         $agenda = $this->getById($id);
         if ($agenda->agenda_img != "default.jpg") {
             $filename = explode(".", $agenda->agenda_img)[0];
-            return array_map('unlink', glob(FCPATH . "assets/back_end/upload/agenda/$filename.*"));
+            return array_map('unlink', glob(FCPATH . "assets/upload/agenda/$filename.*"));
         }
     }
 
     private function _uploadImage()
     {
-        $config['upload_path'] = './assets/back_end/upload/agenda/';
+        $config['upload_path'] = './assets/upload/agenda/';
         $config['allowed_types'] = 'gif|jpg|png|jpeg';
         $config['file_name'] = $this->input->post('agenda_id');
         $config['overwrite'] = true;

@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<!-- VENDOR CSS -->
-	<link rel="stylesheet" href="<?php echo base_url('assets/back_end/css/bootstrap.min.css') ?>">
+	<link rel="stylesheet" href="<?php echo base_url('assets/back_end/bs3/css/bootstrap.min.css') ?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/back_end/font-awesome/css/font-awesome.min.css') ?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/back_end/linearicons/style.css') ?>">
 	<!-- MAIN CSS -->
@@ -17,8 +17,8 @@
 	<!-- GOOGLE FONTS -->
 	<link href="<?php echo base_url('assets/back_end/css/font_googleapis.css') ?>" rel="stylesheet">
 	<!-- ICONS -->
-	<link rel="apple-touch-icon" sizes="76x76" href="<?php echo base_url('assets/back_end/img/apple-icon.png') ?>">
-	<link rel="icon" type="image/png" sizes="96x96" href="<?php echo base_url('assets/back_end/img/favicon.png') ?>">
+	<link rel="apple-touch-icon" sizes="76x76" href="<?php echo base_url('assets/back_end/images/Faviconn.png') ?>">
+	<link rel="icon" type="image/png" sizes="96x96" href="<?php echo base_url('assets/back_end/images/Faviconn.png') ?>">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
 				<div class="auth-box" style="width: 40%;">
 						<div class="content">
 							<div class="header">
-								<div class="logo text-center"><img src="<?php echo base_url('assets/back_end/img/logo-dark3.png') ?>" alt="Klorofil Logo"></div>
+								<div class="logo text-center"><img src="<?php echo base_url('assets/back_end/images/logo-dark3.png') ?>" alt="Klorofil Logo"></div>
 								<p class="lead">Login to your account</p>
 							</div>
 							<?= $this->session->flashdata('pesan'); ?>
