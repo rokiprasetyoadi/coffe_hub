@@ -23,9 +23,12 @@ class Authentication extends CI_Controller
         $cek = $this->M_auth->cek_login("admin", $where)->row_array();
         if ($cek > 0) {
             $data_session = array(
+                'admin_id' => $cek['admin_id'],
                 'admin_username' => $cek['admin_username'],
                 'admin_nama' => $cek['admin_nama'],
                 'admin_email' => $cek['admin_email'],
+                'admin_alamat' => $cek['admin_alamat'],
+                'admin_telp' => $cek['admin_telp'],
                 'status' => "login_acc"
                 );
 

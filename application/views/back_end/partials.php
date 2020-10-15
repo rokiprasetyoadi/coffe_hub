@@ -240,7 +240,7 @@
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu extended logout">
-                <li><a href="<?php echo base_url('admin/profile') ?>"><i class=" fa fa-suitcase"></i>Profile</a></li>
+                <li><a href="<?php echo base_url('back_end/profile') ?>"><i class=" fa fa-suitcase"></i>Profile</a></li>
                 <!-- <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li> -->
                 <li><a href="<?php echo base_url('back_end/Authentication/logout') ?>"><i class="fa fa-key"></i> Log Out</a></li>
             </ul>
