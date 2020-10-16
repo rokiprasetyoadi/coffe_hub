@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url('assets/front_end/img/favicon.png') ?>">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url('assets/back_end/images/Faviconn.png') ?>">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -17,9 +17,7 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/front_end/css/owl.carousel.min.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/front_end/css/magnific-popup.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/front_end/css/font-awesome.min.css') ?>">
-    <link rel="stylesheet" href="<?php echo base_url('assets/front_end/css/themify-icons.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/front_end/css/nice-select.css') ?>">
-    <link rel="stylesheet" href="<?php echo base_url('assets/front_end/css/flaticon.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/front_end/css/gijgo.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/front_end/css/animate.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/front_end/css/slick.css') ?>">
@@ -47,7 +45,7 @@
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
                                     <a href="index.html">
-                                        <img src="<?php echo base_url('assets/front_end/img/logo.png') ?>" alt="">
+                                        <img src="<?php echo base_url('assets/back_end/images/logo-dark3.png') ?>" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -56,9 +54,9 @@
                                     <nav>
                                         <ul id="navigation">
                                             <li><a class="active" href="index.html">home</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a class="" href="travel_destination.html">Destination</a></l/li>
-                                            <li><a href="#">pages <i class="ti-angle-down"></i></a>
+                                            <li><a class="" href="travel_destination.html">Agenda</a></l/li>
+                                                <li><a class="" href="travel_destination.html">E-Katalog</a></l/li>
+                                            <!--<li><a href="#">pages <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
                                                         <li><a href="destination_details.html">Destinations details</a></li>
                                                         <li><a href="elements.html">elements</a></li>
@@ -69,17 +67,18 @@
                                                     <li><a href="blog.html">blog</a></li>
                                                     <li><a href="single-blog.html">single-blog</a></li>
                                                 </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            </li>-->
+                                            <li><a href="contact.html">Hubungi Kami</a></li>
+                                            <li><a href="about.html">Tentang Kami</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4 d-none d-lg-block">
                                 <div class="social_wrap d-flex align-items-center justify-content-end">
-                                    <div class="number">
+                                    <!--<div class="number">
                                         <p> <i class="fa fa-phone"></i> 10(256)-928 256</p>
-                                    </div>
+                                    </div>-->
                                     <div class="social_links d-none d-xl-block">
                                         <ul>
                                             <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
@@ -90,6 +89,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!--
                             <div class="seach_icon">
                                 <a data-toggle="modal" data-target="#exampleModalCenter" href="#">
                                     <i class="fa fa-search"></i>
@@ -98,6 +98,7 @@
                             <div class="col-12">
                                 <div class="mobile_menu d-block d-lg-none"></div>
                             </div>
+                        -->
                         </div>
                     </div>
 
@@ -115,9 +116,9 @@
                     <div class="row align-items-center">
                         <div class="col-xl-12 col-md-12">
                             <div class="slider_text text-center">
-                                <h3>Indonesia</h3>
-                                <p>Pixel perfect design with awesome contents</p>
-                                <a href="#" class="boxed-btn3">Explore Now</a>
+                                <h3>Coffee-HUB</h3>
+                                <p>Welcome to the coffee-hub official website</p>
+                                <!--<a href="#" class="boxed-btn3">Explore Now</a>-->
                             </div>
                         </div>
                     </div>
@@ -128,9 +129,9 @@
                     <div class="row align-items-center">
                         <div class="col-xl-12 col-md-12">
                             <div class="slider_text text-center">
-                                <h3>Australia</h3>
-                                <p>Pixel perfect design with awesome contents</p>
-                                <a href="#" class="boxed-btn3">Explore Now</a>
+                                <h3>Coffee-HUB</h3>
+                                <p>Welcome to the coffee-hub official website</p>
+                                <!--<a href="#" class="boxed-btn3">Explore Now</a>-->
                             </div>
                         </div>
                     </div>
@@ -141,9 +142,9 @@
                     <div class="row align-items-center">
                         <div class="col-xl-12 col-md-12">
                             <div class="slider_text text-center">
-                                <h3>Switzerland</h3>
-                                <p>Pixel perfect design with awesome contents</p>
-                                <a href="#" class="boxed-btn3">Explore Now</a>
+                                <h3>Coffee-HUB</h3>
+                                <p>Welcome to the coffee-hub official website</p>
+                                <!--<a href="#" class="boxed-btn3">Explore Now</a>-->
                             </div>
                         </div>
                     </div>
