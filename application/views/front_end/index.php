@@ -43,8 +43,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section_title text-center mb_70">
-                        <h3>Popular Destination</h3>
-                        <p>Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit hella wolf moon beard words.</p>
+                        <h3>Agenda</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel augue interdum neque iaculis consequat sed eu nisi. Pellentesque aliquam massa ac sem molestie maximus.</p>
                     </div>
                 </div>
             </div>
@@ -117,6 +117,13 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+                <div class="col-lg-12">
+                    <div class="more_place_btn text-center">
+                        <a class="boxed-btn4" href="#">Tampilkan Semua</a>
+                    </div>
+                </div>
+            </div>
     </div>
     <!-- popular_destination_area_end  -->
 
@@ -163,8 +170,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section_title text-center mb_70">
-                        <h3>Popular Places</h3>
-                        <p>Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit hella wolf moon beard words.</p>
+                        <h3>E-Katalog</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel augue interdum neque iaculis consequat sed eu nisi. Pellentesque aliquam massa ac sem molestie maximus.</p>
                     </div>
                 </div>
             </div>
@@ -329,7 +336,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="more_place_btn text-center">
-                        <a class="boxed-btn4" href="#">More Places</a>
+                        <a class="boxed-btn4" href="#">Tampilkan Semua</a>
                     </div>
                 </div>
             </div>
@@ -354,7 +361,7 @@
         </div>
     </div>
 
-
+<!--
     <div class="travel_variation_area">
         <div class="container">
             <div class="row">
@@ -388,9 +395,10 @@
             </div>
         </div>
     </div>
-
+-->
 
     <!-- testimonial_area  -->
+    <!--
     <div class="testimonial_area">
         <div class="container">
             <div class="row">
@@ -446,9 +454,10 @@
             </div>
         </div>
     </div>
+-->
     <!-- /testimonial_area  -->
 
-
+<!--
     <div class="recent_trip_area">
         <div class="container">
             <div class="row justify-content-center">
@@ -510,4 +519,4 @@
             </div>
         </div>
     </div>
-
+    -->

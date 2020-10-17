@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/front_end/css/jquery-ui.css') ?>">
     <link href="<?php echo base_url('assets/back_end/font-awesome/css/font-awesome.css') ?>" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url('assets/front_end/css/owl.theme.default.min.css') ?>">
+    <!--
+    <link rel="stylesheet" href="<?php echo base_url('assets/front_end/css/themify-icons.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/front_end/css/flaticon.css') ?>">
+    -->
 
     <link rel="stylesheet" href="<?php echo base_url('assets/front_end/css/style.css') ?>">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
@@ -165,13 +169,15 @@
                         <div class="footer_widget">
                             <div class="footer_logo">
                                 <a href="#">
-                                    <img src="<?php echo base_url('assets/front_end/img/footer_logo.png') ?>" alt="">
+                                    <img style="width: 180px;" src="<?php echo base_url('assets/back_end/images/logo-DASH.png') ?>" alt="">
                                 </a>
                             </div>
-                            <p>5th flora, 700/D kings road, green <br> lane New York-1782 <br>
-                                <a href="#">+10 367 826 2567</a> <br>
-                                <a href="#">contact@carpenter.com</a>
+                            <p>Jl. PB. Sudirman 90, Jember 68118<br>
+                                <a href="#">Telp : (62331) 757130, 757132</a> <br>
+                                <a href="#">Fax : (0331) - 757131</a> <br>
+                                <a href="#">E-Mail : iccri@iccri.net</a>
                             </p>
+                            <!--
                             <div class="socail_links">
                                 <ul>
                                     <li>
@@ -201,44 +207,40 @@
                                     </li>
                                 </ul>
                             </div>
+                        -->
 
                         </div>
                     </div>
                     <div class="col-xl-2 col-md-6 col-lg-2">
                         <div class="footer_widget">
                             <h3 class="footer_title">
-                                Company
+                                Butuh Bantuan ?
                             </h3>
                             <ul class="links">
-                                <li><a href="#">Pricing</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#"> Gallery</a></li>
-                                <li><a href="#"> Contact</a></li>
+                                <li><a href="#">Hubungi Kami</a></li>
+                                <li><a href="#">Tentang Kami</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title" style="text-align: center;">
+                                Sosial Media
+                            </h3>
+                            <ul class="links double_links" style="text-align: center;">
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Instagram</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Youtube</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xl-3 col-md-6 col-lg-3">
                         <div class="footer_widget">
                             <h3 class="footer_title">
-                                Popular destination
+                                Coffe-HUB
                             </h3>
-                            <ul class="links double_links">
-                                <li><a href="#">Indonesia</a></li>
-                                <li><a href="#">America</a></li>
-                                <li><a href="#">India</a></li>
-                                <li><a href="#">Switzerland</a></li>
-                                <li><a href="#">Italy</a></li>
-                                <li><a href="#">Canada</a></li>
-                                <li><a href="#">Franch</a></li>
-                                <li><a href="#">England</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6 col-lg-3">
-                        <div class="footer_widget">
-                            <h3 class="footer_title">
-                                Instagram
-                            </h3>
+                            <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel augue interdum neque iaculis consequat sed eu nisi. Pellentesque aliquam massa ac sem molestie maximus.</p>-->
                             <div class="instagram_feed">
                                 <div class="single_insta">
                                     <a href="#">
