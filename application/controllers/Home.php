@@ -16,4 +16,14 @@ class Home extends CI_Controller
         $data['katalog6']=$this->M_index->getKatalog6()->result();
         $this->temp->load('front_end/partials', 'front_end/index', $data);
     }
+    
+    public function hubungi_kami()
+    {
+        $this->temp->load('front_end/partials','front_end/profile/hubungi_kami');
+    }
+
+    public function tentang_kami()
+    {
+        $this->temp->load('front_end/partials','front_end/profile/tentang_kami');
+    }
 }

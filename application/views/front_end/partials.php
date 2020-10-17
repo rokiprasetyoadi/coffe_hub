@@ -48,7 +48,7 @@
                         <div class="row align-items-center">
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html">
+                                    <a href="<?php echo base_url('home') ?>">
                                         <img src="<?php echo base_url('assets/back_end/images/logo-dark3.png') ?>" alt="">
                                     </a>
                                 </div>
@@ -57,9 +57,9 @@
                                 <div class="main-menu  d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a class="active" href="index.html">home</a></li>
-                                            <li><a class="" href="travel_destination.html">Agenda</a></l/li>
-                                                <li><a class="" href="travel_destination.html">E-Katalog</a></l/li>
+                                            <li><a class="active" href="<?php echo base_url('home') ?>">home</a></li>
+                                            <li><a class="" href="<?php echo base_url('front_end/agenda') ?>">Agenda</a></l/li>
+                                                <li><a class="" href="<?php echo base_url('front_end/EKatalog') ?>">E-Katalog</a></l/li>
                                             <!--<li><a href="#">pages <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
                                                         <li><a href="destination_details.html">Destinations details</a></li>
@@ -72,8 +72,8 @@
                                                     <li><a href="single-blog.html">single-blog</a></li>
                                                 </ul>
                                             </li>-->
-                                            <li><a href="contact.html">Hubungi Kami</a></li>
-                                            <li><a href="about.html">Tentang Kami</a></li>
+                                            <li><a href="<?php echo base_url('home/hubungi_kami') ?>">Hubungi Kami</a></li>
+                                            <li><a href="<?php echo base_url('home/tentang_kami') ?>">Tentang Kami</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -217,8 +217,8 @@
                                 Butuh Bantuan ?
                             </h3>
                             <ul class="links">
-                                <li><a href="#">Hubungi Kami</a></li>
-                                <li><a href="#">Tentang Kami</a></li>
+                                <li><a href="<?php echo base_url('home/hubungi_kami') ?>">Hubungi Kami</a></li>
+                                <li><a href="<?php echo base_url('home/tentang_kami') ?>">Tentang Kami</a></li>
                             </ul>
                         </div>
                     </div>

@@ -69,7 +69,7 @@
         <div class="row">
                 <div class="col-lg-12">
                     <div class="more_place_btn text-center">
-                        <a class="boxed-btn4" href="#">Tampilkan Semua</a>
+                        <a class="boxed-btn4" href="<?php echo base_url('front_end/agenda') ?>">Tampilkan Semua</a>
                     </div>
                 </div>
             </div>
@@ -138,7 +138,7 @@
                             <div class="rating_days d-flex justify-content-between">
                                 <span class="d-flex justify-content-center align-items-center">
                                      
-                                     <a href="#"><?php echo $k->catalog_ketinggian ?>meter dpl</a>
+                                     <a href="#"><?php echo $k->catalog_ketinggian ?>&nbsp;mdpl</a>
                                 </span>
                                 <div class="days">
                                     <i class="fa fa-chevron-circle-right"></i> 
@@ -154,7 +154,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="more_place_btn text-center">
-                        <a class="boxed-btn4" href="#">Tampilkan Semua</a>
+                        <a class="boxed-btn4" href="<?php echo base_url('front_end/EKatalog') ?>">Tampilkan Semua</a>
                     </div>
                 </div>
             </div>
