@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/front_end/css/slick.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/front_end/css/slicknav.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/front_end/css/jquery-ui.css') ?>">
-    <link href="<?php echo base_url('assets/back_end/font-awesome/css/font-awesome.css') ?>" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url('assets/back_end/font-awesome/css/font-awesome.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/front_end/css/owl.theme.default.min.css') ?>">
     <!--
     <link rel="stylesheet" href="<?php echo base_url('assets/front_end/css/themify-icons.css') ?>">

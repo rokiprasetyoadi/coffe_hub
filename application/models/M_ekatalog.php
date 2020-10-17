@@ -161,4 +161,11 @@
         return "default.jpg";
     }
 
+    //Front_end
+
+    function dtl_katalog($where,$table){
+        $this->db->select('*');
+        return $this->db->get_where($table,$where);
+    }
+
 }

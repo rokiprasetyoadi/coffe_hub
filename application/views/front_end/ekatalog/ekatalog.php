@@ -14,19 +14,19 @@
                     <div class="single_place">
                         <div class="thumb">
                             <img src="<?= base_url('assets/upload/e_catalog/'.$k->catalog_img) ?>" alt="">
-                            <a href="#" class="prise"><?php echo $k->catalog_nama_kopi ?></a>
+                            <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>" class="prise"><?php echo $k->catalog_nama_kopi ?></a>
                         </div>
                         <div class="place_info">
-                            <a href="destination_details.html"><h3><?php echo $k->catalog_nama_petani ?></h3></a>
+                            <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>"><h3><?php echo $k->catalog_nama_petani ?></h3></a>
                             <p><?php echo $k->catalog_deskripsi ?></p>
                             <div class="rating_days d-flex justify-content-between">
                                 <span class="d-flex justify-content-center align-items-center">
                                      
-                                     <a href="#"><?php echo $k->catalog_ketinggian ?>&nbsp;mdpl</a>
+                                     <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>"><?php echo $k->catalog_ketinggian ?>&nbsp;mdpl</a>
                                 </span>
                                 <div class="days">
                                     <i class="fa fa-chevron-circle-right"></i> 
-                                    <a href="#"><?php echo $k->catalog_jenis_kopi ?></a>
+                                    <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>"><?php echo $k->catalog_jenis_kopi ?></a>
                                 </div>
                             </div>
                         </div>

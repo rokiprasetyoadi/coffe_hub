@@ -13,7 +13,14 @@ class EKatalog extends CI_Controller
     public function index()
     {
     	$data['katalogall']=$this->M_ekatalog->getAll()->result();
-        $this->temp->load('front_end/partials', 'front_end/ekatalog', $data);
+        $this->temp->load('front_end/partials', 'front_end/ekatalog/ekatalog', $data);
+    }
+
+    public function detail_ekatalog($id)
+    {
+        $where = array('catalog_id' => $id);
+        $data['detail_ekatalog']=$this->M_ekatalog->dtl_katalog($where,'e_catalog')->result();
+        $this->temp->load('front_end/partials', 'front_end/ekatalog/detail_ekatalog', $data);
     }
 
 }

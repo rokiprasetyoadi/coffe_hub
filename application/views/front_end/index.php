@@ -56,7 +56,7 @@
                             <img src="<?= base_url('assets/upload/agenda/'.$ag->agenda_img) ?>" alt="">
                         </div>
                         <div class="content">
-                            <p class="d-flex align-items-center"><?php echo $ag->agenda_nama ?><a href="travel_destination.html"><?php echo $ag->agenda_tanggal ?>&nbsp;&nbsp;<?php echo $ag->agenda_jam ?></a> </p>
+                            <p class="d-flex align-items-center"><?php echo $ag->agenda_nama ?><a href="<?php echo site_url('front_end/agenda/detail_agenda/'.$ag->agenda_id) ?>"><?php echo $ag->agenda_tanggal ?>&nbsp;&nbsp;<?php echo $ag->agenda_jam ?></a> </p>
                             <p style="font-size: 90%;"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;<?php echo $ag->agenda_tempat ?></p>
                             
                         </div>
@@ -130,19 +130,19 @@
                     <div class="single_place">
                         <div class="thumb">
                             <img src="<?= base_url('assets/upload/e_catalog/'.$k->catalog_img) ?>" alt="">
-                            <a href="#" class="prise"><?php echo $k->catalog_nama_kopi ?></a>
+                            <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>" class="prise"><?php echo $k->catalog_nama_kopi ?></a>
                         </div>
                         <div class="place_info">
-                            <a href="destination_details.html"><h3><?php echo $k->catalog_nama_petani ?></h3></a>
+                            <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>"><h3><?php echo $k->catalog_nama_petani ?></h3></a>
                             <p><?php echo $k->catalog_deskripsi ?></p>
                             <div class="rating_days d-flex justify-content-between">
                                 <span class="d-flex justify-content-center align-items-center">
                                      
-                                     <a href="#"><?php echo $k->catalog_ketinggian ?>&nbsp;mdpl</a>
+                                     <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>"><?php echo $k->catalog_ketinggian ?>&nbsp;mdpl</a>
                                 </span>
                                 <div class="days">
                                     <i class="fa fa-chevron-circle-right"></i> 
-                                    <a href="#"><?php echo $k->catalog_jenis_kopi ?></a>
+                                    <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>"><?php echo $k->catalog_jenis_kopi ?></a>
                                 </div>
                             </div>
                         </div>
