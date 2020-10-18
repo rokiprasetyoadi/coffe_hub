@@ -240,7 +240,7 @@
                                     <div class="form-group">
                                         <div class="col-lg-offset-3 col-lg-6">
                                             <button class="btn btn-primary" name="edit" type="submit">Save</button>
-                                            <a href="<?= site_url() ?>back_end/agenda" class="btn btn-default" type="cancel">Cancel</a>
+                                            <a href="<?= site_url() ?>back_end/ekatalog" class="btn btn-default" type="cancel">Cancel</a>
                                         </div>
                                     </div>
                                 </form>

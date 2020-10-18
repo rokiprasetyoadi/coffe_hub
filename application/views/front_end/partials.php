@@ -173,7 +173,7 @@
                                 </a>
                             </div>
                             <p>Jl. PB. Sudirman 90, Jember 68118<br>
-                                <a href="#">Telp : (62331) 757130, 757132</a> <br>
+                                <a href="#">Telp : (0331) 757130, 757132</a> <br>
                                 <a href="#">Fax : (0331) - 757131</a> <br>
                                 <a href="#">E-Mail : iccri@iccri.net</a>
                             </p>

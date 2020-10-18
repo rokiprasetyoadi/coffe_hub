@@ -130,19 +130,19 @@
                     <div class="single_place">
                         <div class="thumb">
                             <img src="<?= base_url('assets/upload/e_catalog/'.$k->catalog_img) ?>" alt="">
-                            <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>" class="prise"><?php echo $k->catalog_nama_kopi ?></a>
+                            <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>" class="prise"><?php echo $k->catalog_jenis_kopi ?></a>
                         </div>
                         <div class="place_info">
-                            <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>"><h3><?php echo $k->catalog_nama_petani ?></h3></a>
-                            <p><?php echo $k->catalog_deskripsi ?></p>
+                            <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>"><h3><?php echo $k->catalog_nama_kopi ?></h3></a>
+                            <p><?php echo substr($k->catalog_deskripsi,0,150); ?>&nbsp;...</p>
                             <div class="rating_days d-flex justify-content-between">
                                 <span class="d-flex justify-content-center align-items-center">
                                      
-                                     <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>"><?php echo $k->catalog_ketinggian ?>&nbsp;mdpl</a>
+                                     <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>">Owner : <?php echo $k->catalog_nama_petani ?></a>
                                 </span>
                                 <div class="days">
                                     <i class="fa fa-chevron-circle-right"></i> 
-                                    <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>"><?php echo $k->catalog_jenis_kopi ?></a>
+                                    <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>"><?php echo $k->catalog_ketinggian ?>&nbsp;mdpl</a>
                                 </div>
                             </div>
                         </div>

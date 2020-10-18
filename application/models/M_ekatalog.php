@@ -43,7 +43,7 @@
             [
                 'field' => 'catalog_id',
                 'label' => 'ID ECatalog',
-                'rules' => 'required|is_unique[e_catalog.catalog_id]'
+                'rules' => 'required'
             ],
             [
                 'field' => 'catalog_nama_petani',
@@ -117,7 +117,6 @@
             'catalog_kap_produksi' => htmlspecialchars($this->input->post('catalog_kap_produksi', true)),
             'catalog_sertifikat' => htmlspecialchars($this->input->post('catalog_sertifikat', true)),
             'catalog_deskripsi' => htmlspecialchars($this->input->post('catalog_deskripsi', true)),
-            'catalog_img' => $this->_uploadImage()
         ];
 
         $this->db->where('catalog_id', $this->input->post('catalog_id'));
