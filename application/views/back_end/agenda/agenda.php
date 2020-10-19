@@ -32,9 +32,9 @@
                                     <th>No</th>
                                     <th>Nama Agenda</th>
                                     <th>Foto</th>
-                                    <th>Keterangan</th>
                                     <th>Tempat</th>
                                     <th>Tanggal | Jam</th>
+                                    <th>Keterangan</th>
                                     <th>Edit</th>
                                     <th>Delete</th>
                                 </tr>
@@ -46,10 +46,10 @@
                                 <tr class="">
                                     <td><?= $i++ ?></td>
                                     <td><?php echo $data->agenda_nama; ?></td>
-                                    <td><a href="<?= base_url('assets/upload/agenda/'.$data->agenda_img) ?>" data-fancybox data-caption="Agenda"> <img style="height: 50px; width: 50px;" src="<?= base_url('assets/upload/agenda/'.$data->agenda_img) ?>"></a></td>
-                                    <td><?php echo $data->agenda_keterangan; ?></td>
+                                    <td align="center"><a href="<?= base_url('assets/upload/agenda/'.$data->agenda_img) ?>" data-fancybox data-caption="Agenda"> <img style="height: 50px; width: 50px;" src="<?= base_url('assets/upload/agenda/'.$data->agenda_img) ?>"></a></td>
                                     <td><?php echo $data->agenda_tempat; ?></td>
                                     <td><?php echo $data->agenda_tanggal; ?>&nbsp;|&nbsp;<?php echo $data->agenda_jam; ?></td>
+                                    <td style="width: 250px;"><?php echo substr($data->agenda_keterangan,0,100); ?>&nbsp;...</td>
                                     <td style="text-align: center;"><a class="edit" href="<?= site_url(); ?>back_end/agenda/edit/<?= $data->agenda_id ?>"><i class="fa fa-edit"></i></a></td>
                                     <td style="text-align: center;"><a class="delete" onclick="deleteConfirm('<?= site_url(); ?>back_end/agenda/delete/<?= $data->agenda_id ?>')" href="#!"><i class="fa fa-trash-o"></i></a></td>
                                 </tr>

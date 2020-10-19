@@ -30,12 +30,12 @@
                                 <thead>
                                 <tr>
                                     <th>No</th>
+                                    <th>Nama Kopi</th>
+                                    <th>Foto</th>
                                     <th>Nama Petani</th>
                                     <th>Alamat</th>
-                                    <th>Kelompok Tani</th>
                                     <th>No HP</th>
-                                    <th>Nama Kopi</th>
-                                    <th>Badan Usaha</th>
+                                    <th>Detail</th>
                                     <th>Edit</th>
                                     <th>Delete</th>
                                 </tr>
@@ -46,12 +46,12 @@
                                     foreach ($ekatalog as $data):?>
                                 <tr class="">
                                     <td><?= $i++ ?></td>
+                                    <td><?php echo $data->catalog_nama_kopi; ?></td>
+                                    <td align="center"><a href="<?= base_url('assets/upload/e_catalog/'.$data->catalog_img) ?>" data-fancybox data-caption="Katalog"> <img style="height: 50px; width: 50px;" src="<?= base_url('assets/upload/e_catalog/'.$data->catalog_img) ?>"></a></td>
                                     <td><?php echo $data->catalog_nama_petani; ?></td>
                                     <td><?php echo $data->catalog_alamat; ?></td>
-                                    <td><?php echo $data->catalog_kelompok_tani; ?></td>
                                     <td><?php echo $data->catalog_no_hp; ?></td>
-                                    <td><?php echo $data->catalog_nama_kopi; ?></td>
-                                    <td><?php echo $data->catalog_badan_usaha; ?></td>
+                                    <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalDetail<?= $data->catalog_id; ?>">Detail</button></td>
                                     <td style="text-align: center;"><a class="edit" href="<?= site_url(); ?>back_end/ekatalog/edit/<?= $data->catalog_id ?>"><i class="fa fa-edit"></i></a></td>
                                     <td style="text-align: center;"><a class="delete" onclick="deleteConfirm('<?= site_url(); ?>back_end/ekatalog/delete/<?= $data->catalog_id ?>')" href="#!"><i class="fa fa-trash-o"></i></a></td>
                                 </tr>
@@ -66,3 +66,67 @@
         </div>
 
 <!-- Content End -->
+<!-- Modal -->
+<?php foreach($ekatalog as $i):?>
+<div class="modal fade" id="modalDetail<?= $i->catalog_id; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle"><b><?= $i->catalog_nama_kopi; ?> </b></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-bordered">
+            <tr>
+                <td>Kelompok Tani</td>
+                <td><?php echo $data->catalog_kelompok_tani; ?></td>
+            </tr>
+            <tr>
+                <td>Website</td>
+                <td><?php echo $data->catalog_website; ?></td>
+            </tr>
+            <tr>
+                <td>Sosial Media</td>
+                <td><?php echo $data->catalog_sosmed; ?></td>
+            </tr>
+            <tr>
+                <td>Badan Usaha</td>
+                <td><?php echo $data->catalog_badan_usaha; ?></td>
+            </tr>
+            <tr>
+                <td>Lokasi</td>
+                <td><?php echo $data->catalog_lokasi; ?></td>
+            </tr>
+            <tr>
+                <td>Ketinggian</td>
+                <td><?php echo $data->catalog_ketinggian; ?></td>
+            </tr>
+            <tr>
+                <td>Jenis Kopi</td>
+                <td><?php echo $data->catalog_jenis_kopi; ?></td>
+            </tr>
+            <tr>
+                <td>Kapasitas Produksi</td>
+                <td><?php echo $data->catalog_kap_produksi; ?></td>
+            </tr>
+            <tr>
+                <td>Sertifikat</td>
+                <td><?php echo $data->catalog_sertifikat; ?></td>
+            </tr>
+            <tr>
+                <td>Deskripsi</td>
+                <td><?php echo $data->catalog_deskripsi; ?></td>
+            </tr>
+        </table>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<?php endforeach; ?>
