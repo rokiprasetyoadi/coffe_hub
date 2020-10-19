@@ -8,7 +8,7 @@
 				<h2 class="mb-30"><?php echo $row->catalog_nama_kopi; ?></h2>
 				<div class="row">
 					<div class="col-md-3">
-						<img src="<?= base_url('assets/upload/e_catalog/'.$row->catalog_img) ?>" alt="" class="img-fluid">
+						<img style="margin-top: 5px;" src="<?= base_url('assets/upload/e_catalog/'.$row->catalog_img) ?>" alt="" class="img-fluid">
 					</div>
 					<div class="col-md-9 mt-sm-20">
 						<p><?php echo $row->catalog_deskripsi; ?></p>
