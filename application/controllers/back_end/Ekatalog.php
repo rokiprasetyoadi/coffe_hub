@@ -96,11 +96,11 @@ class Ekatalog extends CI_Controller
         redirect('back_end/Ekatalog');
     }
 
-    //public function print()
-    //{
-        //$data['tbl_barang']=$this->M_barang->getAll()->result();
-        //$this->temp->load('admin/print/partials.html', 'admin/print/barang.html', $data);
-    //}
+    public function print()
+    {
+        $data['ekatalog_print']=$this->M_ekatalog->getAll()->result();
+        $this->temp->load('back_end/print/partials.html', 'back_end/print/ekatalog.html', $data);
+    }
 }
 
 /* End of file Controllername.php */

@@ -96,11 +96,11 @@ class Agenda extends CI_Controller
         redirect('back_end/Agenda');
     }
 
-    //public function print()
-    //{
-        //$data['tbl_barang']=$this->M_barang->getAll()->result();
-        //$this->temp->load('admin/print/partials.html', 'admin/print/barang.html', $data);
-    //}
+    public function print()
+    {
+        $data['agenda_print']=$this->M_agenda->getAll()->result();
+        $this->temp->load('back_end/print/partials.html', 'back_end/print/agenda.html', $data);
+    }
 }
 
 /* End of file Controllername.php */
