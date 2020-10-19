@@ -105,6 +105,18 @@
         $this->db->update('agenda', $data);
     }
 
+    public function editimg()
+    {
+        $data = [
+            'agenda_id' => htmlspecialchars($this->input->post('agenda_id', true)),
+            'agenda_nama' => htmlspecialchars($this->input->post('agenda_nama', true)),
+            'agenda_img' => $this->_uploadImage()
+        ];
+
+        $this->db->where('agenda_id', $this->input->post('agenda_id'));
+        $this->db->update('agenda', $data);
+    }
+
     public function deleteData($id)
     {
         $this->_deleteImage($id);

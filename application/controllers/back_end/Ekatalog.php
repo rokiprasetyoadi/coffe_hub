@@ -63,6 +63,33 @@ class Ekatalog extends CI_Controller
         }
     }
 
+    public function edit_img($id)
+    {
+        $this->M_ekatalog->rulesEditIMG();
+        $query = $this->M_ekatalog->getAll($id);
+        if ($this->form_validation->run() == false) {
+            if ($query->num_rows() > 0) {
+                $katalog = $query->row();
+                $data = [
+                    'row' => $katalog
+                ];
+                $this->temp->load('back_end/partials', 'back_end/ekatalog/form_edit_img', $data);
+            }
+        } else {
+            $post = $this->input->post(null, true);
+            if (isset($_POST['edit1'])) {
+                $this->M_ekatalog->editimg($post);
+                $this->session->set_flashdata('pesan', '<div class="alert alert-outline alert-success" role="alert">
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <strong>Data!</strong> berhasil disimpan.
+                                            </div>');
+                redirect('back_end/Ekatalog');
+            }
+        }
+    }
+
     public function delete($id=null)
     {
         $this->M_ekatalog->deleteData($id);

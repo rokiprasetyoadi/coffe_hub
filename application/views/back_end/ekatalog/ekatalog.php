@@ -47,7 +47,9 @@
                                 <tr class="">
                                     <td><?= $i++ ?></td>
                                     <td><?php echo $data->catalog_nama_kopi; ?></td>
-                                    <td align="center"><a href="<?= base_url('assets/upload/e_catalog/'.$data->catalog_img) ?>" data-fancybox data-caption="Katalog"> <img style="height: 50px; width: 50px;" src="<?= base_url('assets/upload/e_catalog/'.$data->catalog_img) ?>"></a></td>
+                                    <td align="center"><a href="<?= base_url('assets/upload/e_catalog/'.$data->catalog_img) ?>" data-fancybox data-caption="Katalog"> <img style="height: 50px; width: 50px;" src="<?= base_url('assets/upload/e_catalog/'.$data->catalog_img) ?>"></a>&nbsp;&nbsp;&nbsp;
+                                        <a class="edit_img" href="<?= site_url(); ?>back_end/ekatalog/edit_img/<?= $data->catalog_id ?>"><i class="fa fa-edit">Ganti</i></a>
+                                    </td>
                                     <td><?php echo $data->catalog_nama_petani; ?></td>
                                     <td><?php echo $data->catalog_alamat; ?></td>
                                     <td><?php echo $data->catalog_no_hp; ?></td>

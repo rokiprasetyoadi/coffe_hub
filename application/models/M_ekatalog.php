@@ -54,6 +54,23 @@
         $this->form_validation->set_rules($data);
     }
 
+    public function rulesEditIMG()
+    {
+        $data = [
+            [
+                'field' => 'catalog_id',
+                'label' => 'ID ECatalog',
+                'rules' => 'required'
+            ],
+            [
+                'field' => 'catalog_nama_kopi',
+                'label' => 'Nama Kopi',
+                'rules' => 'required'
+            ]
+        ];
+        $this->form_validation->set_rules($data);
+    }
+
     public function kode()
     {
         $this->db->select('RIGHT(e_catalog.catalog_id,2) as id', false);
@@ -117,6 +134,18 @@
             'catalog_kap_produksi' => htmlspecialchars($this->input->post('catalog_kap_produksi', true)),
             'catalog_sertifikat' => htmlspecialchars($this->input->post('catalog_sertifikat', true)),
             'catalog_deskripsi' => htmlspecialchars($this->input->post('catalog_deskripsi', true)),
+        ];
+
+        $this->db->where('catalog_id', $this->input->post('catalog_id'));
+        $this->db->update('e_catalog', $data);
+    }
+
+    public function editimg()
+    {
+        $data = [
+            'catalog_id' => htmlspecialchars($this->input->post('catalog_id', true)),
+            'catalog_nama_kopi' => htmlspecialchars($this->input->post('catalog_nama_kopi', true)),
+            'catalog_img' => $this->_uploadImage()
         ];
 
         $this->db->where('catalog_id', $this->input->post('catalog_id'));

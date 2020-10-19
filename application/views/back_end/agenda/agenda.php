@@ -46,7 +46,9 @@
                                 <tr class="">
                                     <td><?= $i++ ?></td>
                                     <td><?php echo $data->agenda_nama; ?></td>
-                                    <td align="center"><a href="<?= base_url('assets/upload/agenda/'.$data->agenda_img) ?>" data-fancybox data-caption="Agenda"> <img style="height: 50px; width: 50px;" src="<?= base_url('assets/upload/agenda/'.$data->agenda_img) ?>"></a></td>
+                                    <td align="center"><a href="<?= base_url('assets/upload/agenda/'.$data->agenda_img) ?>" data-fancybox data-caption="Agenda"> <img style="height: 50px; width: 50px;" src="<?= base_url('assets/upload/agenda/'.$data->agenda_img) ?>"></a>&nbsp;&nbsp;&nbsp;
+                                        <a class="edit_img" href="<?= site_url(); ?>back_end/agenda/edit_img/<?= $data->agenda_id ?>"><i class="fa fa-edit">Ganti</i></a>
+                                    </td>
                                     <td><?php echo $data->agenda_tempat; ?></td>
                                     <td><?php echo $data->agenda_tanggal; ?>&nbsp;|&nbsp;<?php echo $data->agenda_jam; ?></td>
                                     <td style="width: 250px;"><?php echo substr($data->agenda_keterangan,0,100); ?>&nbsp;...</td>
