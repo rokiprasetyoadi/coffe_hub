@@ -75,7 +75,7 @@ echo '<div class="row">
             <div class="col-sm-6" style="float: left;">
                 <section class="panel">
                     <header class="panel-heading">
-                        Harga Kopi Hari Ini!!
+                        Unit conversion for Coffee Price Today
                         <span class="tools pull-right">
                             <a href="javascript:;" class="fa fa-chevron-down"></a>
                             <a href="javascript:;" class="fa fa-cog"></a>
