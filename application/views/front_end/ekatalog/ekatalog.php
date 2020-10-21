@@ -1,4 +1,5 @@
-<div class="popular_places_area">
+<!-- Katalog  -->
+    <div class="popular_places_area">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
@@ -12,13 +13,15 @@
                 <?php foreach($katalogall as $k):?>
                 <div class="col-lg-4 col-md-6">
                     <div class="single_place">
+                        <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>">
                         <div class="thumb">
-                            <img src="<?= base_url('assets/upload/e_catalog/'.$k->catalog_img) ?>" alt="">
+                            <img style="height: 300px;" src="<?= base_url('assets/upload/e_catalog/'.$k->catalog_img) ?>" alt="">
                             <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>" class="prise"><?php echo $k->catalog_jenis_kopi ?></a>
                         </div>
+                    </a>
                         <div class="place_info">
                             <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>"><h3><?php echo $k->catalog_nama_kopi ?></h3></a>
-                            <p><?php echo substr($k->catalog_deskripsi,0,150); ?>&nbsp;...</p>
+                            <p style="height: 120px;"><?php echo substr($k->catalog_deskripsi,0,150); ?>&nbsp;...</p>
                             <div class="rating_days d-flex justify-content-between">
                                 <span class="d-flex justify-content-center align-items-center">
                                      
@@ -35,6 +38,8 @@
                 <?php endforeach; ?>
     
             </div>
-        
+            <div class="row">
+            </div>
         </div>
     </div>
+    <!-- END Katalog  -->

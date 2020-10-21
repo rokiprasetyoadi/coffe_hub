@@ -35,8 +35,8 @@
         </div>
     </div>
 -->
-    <!-- where_togo_area_end  -->
 
+    <!-- Katalog  -->
     <div class="popular_places_area">
         <div class="container">
             <div class="row justify-content-center">
@@ -53,13 +53,13 @@
                     <div class="single_place">
                         <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>">
                         <div class="thumb">
-                            <img src="<?= base_url('assets/upload/e_catalog/'.$k->catalog_img) ?>" alt="">
+                            <img style="height: 300px;" src="<?= base_url('assets/upload/e_catalog/'.$k->catalog_img) ?>" alt="">
                             <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>" class="prise"><?php echo $k->catalog_jenis_kopi ?></a>
                         </div>
                     </a>
                         <div class="place_info">
                             <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>"><h3><?php echo $k->catalog_nama_kopi ?></h3></a>
-                            <p><?php echo substr($k->catalog_deskripsi,0,150); ?>&nbsp;...</p>
+                            <p style="height: 120px;"><?php echo substr($k->catalog_deskripsi,0,150); ?>&nbsp;...</p>
                             <div class="rating_days d-flex justify-content-between">
                                 <span class="d-flex justify-content-center align-items-center">
                                      
@@ -85,9 +85,11 @@
             </div>
         </div>
     </div>
+    <!-- END Katalog  -->
     
-    <!-- popular_destination_area_start  -->
-    <div class="popular_destination_area">
+
+    <!-- Agenda -->
+    <div class="recent_trip_area">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
@@ -100,30 +102,34 @@
             <div class="row">
                 <?php foreach($agenda6 as $ag):?>
                 <div class="col-lg-4 col-md-6">
-                    <div class="single_destination">
+                    <div class="single_trip">
+                        <a href="<?php echo site_url('front_end/agenda/detail_agenda/'.$ag->agenda_id) ?>">
                         <div class="thumb">
-                            <img src="<?= base_url('assets/upload/agenda/'.$ag->agenda_img) ?>" alt="">
+                            <img style="height: 300px;" src="<?= base_url('assets/upload/agenda/'.$ag->agenda_img) ?>" alt="">
                         </div>
-                        <div class="content">
-                            <p class="d-flex align-items-center"><?php echo $ag->agenda_nama ?><a href="<?php echo site_url('front_end/agenda/detail_agenda/'.$ag->agenda_id) ?>"><?php echo $ag->agenda_tanggal ?>&nbsp;&nbsp;<?php echo $ag->agenda_jam ?></a> </p>
-                            <p style="font-size: 90%;"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;<?php echo $ag->agenda_tempat ?></p>
-                            
+                    </a>
+                        <div class="info" style="margin-bottom: 50px;">
+                            <div class="date" style="float: right;">
+                                <span><i class="fa fa-calendar">&nbsp;&nbsp;</i><?php echo $ag->agenda_tanggal ?></span>
+                                <span><i class="fa fa-clock-o">&nbsp;&nbsp;</i><?php echo $ag->agenda_jam ?></span>
+                            </div>
+                            <a href="<?php echo site_url('front_end/agenda/detail_agenda/'.$ag->agenda_id) ?>">
+                                <h3><?php echo $ag->agenda_nama ?></h3>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <?php endforeach; ?>
-                
             </div>
-        </div>
-        <div class="row">
-                <div class="col-lg-12">
-                    <div class="more_place_btn text-center">
-                        <a class="boxed-btn4" href="<?php echo base_url('front_end/agenda') ?>">Tampilkan Semua</a>
-                    </div>
+            <div class="col-lg-12">
+                <div class="more_place_btn text-center">
+                    <a class="boxed-btn4" href="<?php echo base_url('front_end/agenda') ?>">Tampilkan Semua</a>
                 </div>
             </div>
+        </div>
     </div>
-    <!-- popular_destination_area_end  -->
+    <!-- END Agenda -->
+
 
     <!-- newletter_area_start  -->
     <!--
@@ -278,67 +284,3 @@
     </div>
 -->
     <!-- /testimonial_area  -->
-
-<!--
-    <div class="recent_trip_area">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section_title text-center mb_70">
-                        <h3>Recent Trips</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_trip">
-                        <div class="thumb">
-                            <img src="<?php echo base_url('assets/front_end/img/trip/1.png') ?>" alt="">
-                        </div>
-                        <div class="info">
-                            <div class="date">
-                                <span>Oct 12, 2019</span>
-                            </div>
-                            <a href="#">
-                                <h3>Journeys Are Best Measured In
-                                    New Friends</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_trip">
-                        <div class="thumb">
-                            <img src="<?php echo base_url('assets/front_end/img/trip/2.png') ?>" alt="">
-                        </div>
-                        <div class="info">
-                            <div class="date">
-                                <span>Oct 12, 2019</span>
-                            </div>
-                            <a href="#">
-                                <h3>Journeys Are Best Measured In
-                                    New Friends</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_trip">
-                        <div class="thumb">
-                            <img src="<?php echo base_url('assets/front_end/img/trip/3.png') ?>" alt="">
-                        </div>
-                        <div class="info">
-                            <div class="date">
-                                <span>Oct 12, 2019</span>
-                            </div>
-                            <a href="#">
-                                <h3>Journeys Are Best Measured In
-                                    New Friends</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    -->

@@ -1,5 +1,5 @@
-<!-- popular_destination_area_start  -->
-    <div class="popular_destination_area">
+<!-- Agenda -->
+    <div class="recent_trip_area">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
@@ -12,20 +12,25 @@
             <div class="row">
                 <?php foreach($agendall as $ag):?>
                 <div class="col-lg-4 col-md-6">
-                    <div class="single_destination">
+                    <div class="single_trip">
+                        <a href="<?php echo site_url('front_end/agenda/detail_agenda/'.$ag->agenda_id) ?>">
                         <div class="thumb">
-                            <img src="<?= base_url('assets/upload/agenda/'.$ag->agenda_img) ?>" alt="">
+                            <img style="height: 300px;" src="<?= base_url('assets/upload/agenda/'.$ag->agenda_img) ?>" alt="">
                         </div>
-                        <div class="content">
-                            <p class="d-flex align-items-center"><?php echo $ag->agenda_nama ?><a href="<?php echo site_url('front_end/agenda/detail_agenda/'.$ag->agenda_id) ?>"><?php echo $ag->agenda_tanggal ?>&nbsp;&nbsp;<?php echo $ag->agenda_jam ?></a> </p>
-                            <p style="font-size: 90%;"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;<?php echo $ag->agenda_tempat ?></p>
-                            
+                    </a>
+                        <div class="info" style="margin-bottom: 50px;">
+                            <div class="date" style="float: right;">
+                                <span><i class="fa fa-calendar">&nbsp;&nbsp;</i><?php echo $ag->agenda_tanggal ?></span>
+                                <span><i class="fa fa-clock-o">&nbsp;&nbsp;</i><?php echo $ag->agenda_jam ?></span>
+                            </div>
+                            <a href="<?php echo site_url('front_end/agenda/detail_agenda/'.$ag->agenda_id) ?>">
+                                <h3><?php echo $ag->agenda_nama ?></h3>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <?php endforeach; ?>
-                
             </div>
         </div>
     </div>
-    <!-- popular_destination_area_end  -->
+    <!-- END Agenda -->
