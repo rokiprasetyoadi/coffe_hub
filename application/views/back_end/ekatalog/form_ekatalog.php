@@ -112,6 +112,12 @@
                                             <input class="form-control " id="catalog_img" name="catalog_img" type="file" />
                                         </div>
                                     </div>
+                                    <div class="form-group ">
+                                        <label for="catalog_video" class="control-label col-lg-3">Video (embed yt)</label>
+                                        <div class="col-lg-6">
+                                            <textarea style="width: 400px; height: 100px;" name="catalog_video" id="catalog_video"></textarea>
+                                        </div>
+                                    </div>
 
                                     <div class="form-group">
                                         <div class="col-lg-offset-3 col-lg-6">
@@ -234,6 +240,12 @@
                                         <label for="catalog_deskripsi" class="control-label col-lg-3">Deskripsi</label>
                                         <div class="col-lg-6">
                                             <textarea style="width: 400px; height: 100px;" name="catalog_deskripsi" id="catalog_deskripsi"><?= $row->catalog_deskripsi; ?></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="catalog_video" class="control-label col-lg-3">Video (embed yt)</label>
+                                        <div class="col-lg-6">
+                                            <textarea style="width: 400px; height: 100px;" name="catalog_video" id="catalog_video"><?= $row->catalog_video; ?></textarea>
                                         </div>
                                     </div>
 

@@ -110,7 +110,8 @@
             'catalog_kap_produksi' => htmlspecialchars($this->input->post('catalog_kap_produksi', true)),
             'catalog_sertifikat' => htmlspecialchars($this->input->post('catalog_sertifikat', true)),
             'catalog_deskripsi' => htmlspecialchars($this->input->post('catalog_deskripsi', true)),
-            'catalog_img' => $this->_uploadImage()
+            'catalog_img' => $this->_uploadImage(),
+            'catalog_video' => htmlspecialchars($this->input->post('catalog_video', true))
         ];
 
         $this->db->insert('e_catalog', $data); // query untuk insert data ke tabel barang
@@ -134,6 +135,7 @@
             'catalog_kap_produksi' => htmlspecialchars($this->input->post('catalog_kap_produksi', true)),
             'catalog_sertifikat' => htmlspecialchars($this->input->post('catalog_sertifikat', true)),
             'catalog_deskripsi' => htmlspecialchars($this->input->post('catalog_deskripsi', true)),
+            'catalog_video' => htmlspecialchars($this->input->post('catalog_video', true))
         ];
 
         $this->db->where('catalog_id', $this->input->post('catalog_id'));
