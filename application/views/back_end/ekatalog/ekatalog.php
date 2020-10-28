@@ -69,12 +69,12 @@
 
 <!-- Content End -->
 <!-- Modal -->
-<?php foreach($ekatalog as $i):?>
-<div class="modal fade" id="modalDetail<?= $i->catalog_id; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<?php foreach($ekatalogModal as $i):?>
+<div class="modal fade" id="modalDetail<?= $i['catalog_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle"><b><?= $i->catalog_nama_kopi; ?> </b></h5>
+        <h5 class="modal-title" id="exampleModalCenterTitle"><b><?= $i['catalog_nama_kopi'] ?></b></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -83,43 +83,43 @@
         <table class="table table-bordered">
             <tr>
                 <td>Kelompok Tani</td>
-                <td><?php echo $data->catalog_kelompok_tani; ?></td>
+                <td><?= $i['catalog_kelompok_tani'] ?></td>
             </tr>
             <tr>
                 <td>Website</td>
-                <td><?php echo $data->catalog_website; ?></td>
+                <td><?= $i['catalog_website'] ?></td>
             </tr>
             <tr>
                 <td>Sosial Media</td>
-                <td><?php echo $data->catalog_sosmed; ?></td>
+                <td><?= $i['catalog_sosmed'] ?></td>
             </tr>
             <tr>
                 <td>Badan Usaha</td>
-                <td><?php echo $data->catalog_badan_usaha; ?></td>
+                <td><?= $i['catalog_badan_usaha'] ?></td>
             </tr>
             <tr>
                 <td>Lokasi</td>
-                <td><?php echo $data->catalog_lokasi; ?></td>
+                <td><?= $i['catalog_lokasi'] ?></td>
             </tr>
             <tr>
                 <td>Ketinggian</td>
-                <td><?php echo $data->catalog_ketinggian; ?></td>
+                <td><?= $i['catalog_ketinggian'] ?></td>
             </tr>
             <tr>
                 <td>Jenis Kopi</td>
-                <td><?php echo $data->catalog_jenis_kopi; ?></td>
+                <td><?= $i['catalog_jenis_kopi'] ?></td>
             </tr>
             <tr>
                 <td>Kapasitas Produksi</td>
-                <td><?php echo $data->catalog_kap_produksi; ?></td>
+                <td><?= $i['catalog_kap_produksi'] ?></td>
             </tr>
             <tr>
                 <td>Sertifikat</td>
-                <td><?php echo $data->catalog_sertifikat; ?></td>
+                <td><?= $i['catalog_sertifikat'] ?></td>
             </tr>
             <tr>
                 <td>Deskripsi</td>
-                <td><?php echo $data->catalog_deskripsi; ?></td>
+                <td><?= $i['catalog_deskripsi'] ?></td>
             </tr>
         </table>
 

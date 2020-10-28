@@ -113,7 +113,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group ">
-                                        <label for="catalog_video" class="control-label col-lg-3">Video (embed yt)</label>
+                                        <label for="catalog_video" class="control-label col-lg-3">Video (Link Youtube)</label>
                                         <div class="col-lg-6">
                                             <textarea style="width: 400px; height: 100px;" name="catalog_video" id="catalog_video"></textarea>
                                         </div>
@@ -243,7 +243,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group ">
-                                        <label for="catalog_video" class="control-label col-lg-3">Video (embed yt)</label>
+                                        <label for="catalog_video" class="control-label col-lg-3">Video (Link Youtube)</label>
                                         <div class="col-lg-6">
                                             <textarea style="width: 400px; height: 100px;" name="catalog_video" id="catalog_video"><?= $row->catalog_video; ?></textarea>
                                         </div>

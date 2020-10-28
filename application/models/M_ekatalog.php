@@ -15,6 +15,11 @@
         return $query;
     }
 
+    public function getM()
+    {
+        return $this->db->get('e_catalog')->result_array();
+    }
+
     public function getById($id)
     {
         return $this->db->get_where($this->_table, ["catalog_id" => $id])->row();

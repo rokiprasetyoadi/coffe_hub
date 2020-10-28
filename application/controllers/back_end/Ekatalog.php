@@ -16,6 +16,7 @@ class Ekatalog extends CI_Controller
     public function index()
     {
         $data['ekatalog']=$this->M_ekatalog->getAll()->result();
+        $data['ekatalogModal']=$this->M_ekatalog->getM();
         $this->temp->load('back_end/partials', 'back_end/ekatalog/ekatalog', $data);
     }
 
