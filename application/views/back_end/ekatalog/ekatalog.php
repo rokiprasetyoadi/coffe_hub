@@ -121,6 +121,10 @@
                 <td>Deskripsi</td>
                 <td><?= $i['catalog_deskripsi'] ?></td>
             </tr>
+            <tr>
+                <td>Link Video YT</td>
+                <td><?= $i['catalog_video'] ?></td>
+            </tr>
         </table>
 
 
