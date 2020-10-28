@@ -8,7 +8,7 @@
 				<h2 class="mb-30"><?php echo $row->agenda_nama; ?></h2>
 				<div class="row">
 					<div class="col-md-3">
-						<img style="margin-top: 20px;" src="<?= base_url('assets/upload/agenda/'.$row->agenda_img) ?>" alt="" class="img-fluid">
+						<a href="<?= base_url('assets/upload/agenda/'.$row->agenda_img) ?>" data-fancybox data-caption="<?php echo $row->agenda_nama; ?>"><img style="margin-top: 20px; margin-bottom: 20px;" src="<?= base_url('assets/upload/agenda/'.$row->agenda_img) ?>" alt="" class="img-fluid"></a>
 					</div>
 					<div class="col-md-9 mt-sm-20">
 						<table class="table table-hover" style="margin-top: 20px; width: 50%;">
@@ -30,7 +30,7 @@
 						    </tr>
 						  </tbody>
 						</table>
-						<p><?php echo $row->agenda_keterangan; ?></p>
+						<p style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $row->agenda_keterangan; ?></p>
 
 					</div>
 				</div>

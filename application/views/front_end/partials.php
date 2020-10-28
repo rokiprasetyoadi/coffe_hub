@@ -32,6 +32,8 @@
 
     <link rel="stylesheet" href="<?php echo base_url('assets/front_end/css/style.css') ?>">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+
+    <link rel="stylesheet" href="<?php echo base_url('assets/back_end/fancybox/jquery.fancybox.min.css') ?>" />
 </head>
 
 <body>
@@ -343,6 +345,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="<?php echo base_url('assets/front_end/js/jquery.form.js') ?>"></script>
     <script src="<?php echo base_url('assets/front_end/js/jquery.validate.min.js') ?>"></script>
     <script src="<?php echo base_url('assets/front_end/js/mail-script.js') ?>"></script>
+
+    <script src="<?php echo base_url('assets/back_end/fancybox/jquery.fancybox.min.js') ?>"></script>
 
 
     <script src="<?php echo base_url('assets/front_end/js/main.js') ?>"></script>
