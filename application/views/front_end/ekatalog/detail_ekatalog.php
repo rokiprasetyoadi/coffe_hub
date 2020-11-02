@@ -84,7 +84,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="video_wrap text-center">
-                        <h3><?php echo $row->catalog_nama_kopi; ?></h3>
+                        <h3><?php echo $row->catalog_nama_kopi; ?> Video</h3>
                         <div class="video_icon">
                             <a class="popup-video video_play_button" href="<?php echo $row->catalog_video; ?>">
                                 <i class="fa fa-play"></i>

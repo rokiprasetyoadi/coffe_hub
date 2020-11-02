@@ -10,7 +10,9 @@
                 </div>
             </div>
             <div class="row">
-                <?php foreach($katalogall as $k):?>
+
+                    <?php foreach ($data->result() as $k) :?>
+
                 <div class="col-lg-4 col-md-6">
                     <div class="single_place">
                         <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>">
@@ -35,11 +37,21 @@
                         </div>
                     </div>
                 </div>
-                <?php endforeach; ?>
+                <?php endforeach; ?>  
     
             </div>
             <div class="row">
             </div>
         </div>
+
+            <div class="row">
+                <div class="col">
+                    <!--Tampilkan pagination-->
+                    <?php echo $pagination; ?>
+                </div>
+            </div>
+
     </div>
     <!-- END Katalog  -->
+
+    

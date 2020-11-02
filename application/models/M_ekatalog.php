@@ -203,4 +203,9 @@
         return $this->db->get_where($table,$where);
     }
 
+    function katalog_page($limit, $start){
+        $query = $this->db->get('e_catalog', $limit, $start);
+        return $query;
+    }
+
 }

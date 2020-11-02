@@ -10,7 +10,8 @@
                 </div>
             </div>
             <div class="row">
-                <?php foreach($agendall as $ag):?>
+                <?php foreach ($data->result() as $ag) :?>
+
                 <div class="col-lg-4 col-md-6">
                     <div class="single_trip">
                         <a href="<?php echo site_url('front_end/agenda/detail_agenda/'.$ag->agenda_id) ?>">
@@ -32,5 +33,13 @@
                 <?php endforeach; ?>
             </div>
         </div>
+
+        <div class="row">
+                <div class="col">
+                    <!--Tampilkan pagination-->
+                    <?php echo $pagination; ?>
+                </div>
+            </div>
+
     </div>
     <!-- END Agenda -->

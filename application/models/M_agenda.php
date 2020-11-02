@@ -156,6 +156,11 @@
 
     //Front_end
 
+    function agenda_page($limit, $start){
+        $query = $this->db->get('agenda', $limit, $start);
+        return $query;
+    }
+
     function dtl_agenda($where,$table){
         $this->db->select('*');
         return $this->db->get_where($table,$where);
