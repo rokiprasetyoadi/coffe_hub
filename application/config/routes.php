@@ -53,3 +53,8 @@ $route['default_controller'] = 'Home';
 $route['admin'] = 'back_end/dashboard';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+//account
+$route['signin'] = 'front_end/member/SignIn';
+$route['signout'] = 'front_end/member/SignOut';
+$route['register'] = 'front_end/member/register';

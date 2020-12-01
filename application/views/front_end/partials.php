@@ -80,6 +80,29 @@
                                     </nav>
                                 </div>
                             </div>
+
+                            <?php if ($this->session->userdata('status') == "SignIn_DoNe") {
+                                ?>
+
+                                <div class="col-xl-4 col-lg-4 d-none d-lg-block">
+                                <div class="main-menu  d-none d-lg-block" style="float: right;">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="#"><?php echo $this->session->userdata('member_nama') ?></a>
+                                                <ul class="submenu">
+                                                    <li><a href="blog.html">Profile</a></li>
+                                                    <li><a href="<?php echo base_url('front_end/member/signout') ?>">Sign Out</a></li>
+                                                </ul>
+
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+
+                                <?php
+                            }else{ ?>
+
                             <div class="col-xl-4 col-lg-4 d-none d-lg-block">
                                 <div class="social_wrap d-flex align-items-center justify-content-end">
                                     <!--<div class="number">
@@ -88,13 +111,20 @@
                                     <div class="social_links d-none d-xl-block">
                                         <ul>
                                             <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
-                                            <li><a href="#"> <i class="fa fa-linkedin"></i> </a></li>
+                                            <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
                                             <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                                            <li><a href="#"> <i class="fa fa-google-plus"></i> </a></li>
+                                            <li><a href="#"> <i class="fa fa-youtube-play"></i> </a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
+
+                            <?php
+                            }
+                            ?>
+
+                            
+
                             <!--
                             <div class="seach_icon">
                                 <a data-toggle="modal" data-target="#exampleModalCenter" href="#">
@@ -356,6 +386,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             icons: {
              rightIcon: '<span class="fa fa-caret-down"></span>'
          }
+        });
+        $('#datepicker2').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+             rightIcon: '<span class="fa fa-caret-down"></span>'
+         }
+
         });
     </script>
 </body>

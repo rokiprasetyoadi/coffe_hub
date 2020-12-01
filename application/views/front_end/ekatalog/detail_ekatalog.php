@@ -32,7 +32,7 @@
 						    <tr>
 						      <th scope="row">No HP</th>
 						      <td>:</td>
-						      <td><?php echo $row->catalog_no_hp; ?></td>
+						      <td><a href="https://wa.me/+62<?php echo $row->catalog_no_hp; ?>"><?php echo $row->catalog_no_hp; ?></a></td>
 						    </tr>
 						    <tr>
 						      <th scope="row">Kelompok Tani</th>
@@ -65,6 +65,9 @@
 						</blockquote>
 					</div>
 				</div>
+			</div>
+			<div style="float: right;">
+				<b>Last Update : </b> <?php echo $row->catalog_last_update; ?>
 			</div>
 
 
