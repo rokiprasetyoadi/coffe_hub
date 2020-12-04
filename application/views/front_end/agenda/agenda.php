@@ -1,3 +1,17 @@
+<!-- bradcam_area  -->
+    <div class="bradcam_area bradcam_bg_3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text text-center">
+                        <h3>Agenda</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ bradcam_area  -->
+
 <!-- Agenda -->
     <div class="recent_trip_area">
         <div class="container">
@@ -34,12 +48,10 @@
             </div>
         </div>
 
-        <div class="row">
                 <div class="col">
                     <!--Tampilkan pagination-->
                     <?php echo $pagination; ?>
                 </div>
-            </div>
 
     </div>
     <!-- END Agenda -->

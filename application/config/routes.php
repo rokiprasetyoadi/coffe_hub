@@ -58,3 +58,9 @@ $route['translate_uri_dashes'] = FALSE;
 $route['signin'] = 'front_end/member/SignIn';
 $route['signout'] = 'front_end/member/SignOut';
 $route['register'] = 'front_end/member/register';
+
+//Home
+$route['agenda'] = 'front_end/agenda';
+$route['ekatalog'] = 'front_end/EKatalog';
+$route['hubungi_kami'] = 'home/hubungi_kami';
+$route['tentang_kami'] = 'home/tentang_kami';

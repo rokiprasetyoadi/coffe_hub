@@ -1,3 +1,17 @@
+<!-- bradcam_area  -->
+    <div class="bradcam_area bradcam_bg_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text text-center">
+                        <h3>Detail E-Katalog</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ bradcam_area  -->
+
 <?php foreach($detail_ekatalog as $row){?>
 
 <?php } ?>
@@ -67,7 +81,7 @@
 				</div>
 			</div>
 			<div style="float: right;">
-				<b>Last Update : </b> <?php echo $row->catalog_last_update; ?>
+				<b>Last Update : </b>&nbsp;&nbsp; <?php $date = date_create ($row->catalog_last_update); echo date_format ($date, "d F Y | H:i"); ?>&nbsp;WIB
 			</div>
 
 

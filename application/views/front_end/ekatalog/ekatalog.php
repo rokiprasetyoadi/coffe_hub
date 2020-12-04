@@ -1,3 +1,17 @@
+<!-- bradcam_area  -->
+    <div class="bradcam_area bradcam_bg_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text text-center">
+                        <h3>E-Katalog</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ bradcam_area  -->
+
 <!-- Katalog  -->
     <div class="popular_places_area">
         <div class="container">
@@ -40,17 +54,12 @@
                 <?php endforeach; ?>  
     
             </div>
-            <div class="row">
-            </div>
         </div>
 
-            <div class="row">
                 <div class="col">
                     <!--Tampilkan pagination-->
                     <?php echo $pagination; ?>
                 </div>
-            </div>
-
     </div>
     <!-- END Katalog  -->
 

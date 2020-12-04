@@ -51,7 +51,7 @@
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
                                     <a href="<?php echo base_url('home') ?>">
-                                        <img src="<?php echo base_url('assets/back_end/images/logo-dark3.png') ?>" alt="">
+                                        <img style="width: 170px; margin-left: 20px;" src="<?php echo base_url('assets/front_end/img/coffee_hub2.png') ?>" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -60,8 +60,8 @@
                                     <nav>
                                         <ul id="navigation">
                                             <li><a class="active" href="<?php echo base_url('home') ?>">home</a></li>
-                                            <li><a class="" href="<?php echo base_url('front_end/agenda') ?>">Agenda</a></l/li>
-                                                <li><a class="" href="<?php echo base_url('front_end/EKatalog') ?>">E-Katalog</a></l/li>
+                                            <li><a class="" href="<?php echo base_url('agenda') ?>">Agenda</a></l/li>
+                                                <li><a class="" href="<?php echo base_url('ekatalog') ?>">E-Katalog</a></l/li>
                                             <!--<li><a href="#">pages <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
                                                         <li><a href="destination_details.html">Destinations details</a></li>
@@ -74,13 +74,30 @@
                                                     <li><a href="single-blog.html">single-blog</a></li>
                                                 </ul>
                                             </li>-->
-                                            <li><a href="<?php echo base_url('home/hubungi_kami') ?>">Hubungi Kami</a></li>
-                                            <li><a href="<?php echo base_url('home/tentang_kami') ?>">Tentang Kami</a></li>
+                                            <li><a href="<?php echo base_url('hubungi_kami') ?>">Hubungi Kami</a></li>
+                                            <li><a href="<?php echo base_url('tentang_kami') ?>">Tentang Kami</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
 
+                            <div class="col-xl-4 col-lg-4 d-none d-lg-block">
+                                <div class="social_wrap d-flex align-items-center justify-content-end">
+                                    <!--<div class="number">
+                                        <p> <i class="fa fa-phone"></i> 10(256)-928 256</p>
+                                    </div>-->
+                                    <div class="social_links d-none d-xl-block">
+                                        <ul>
+                                            <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
+                                            <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+                                            <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
+                                            <li><a href="#"> <i class="fa fa-youtube-play"></i> </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--
                             <?php if ($this->session->userdata('status') == "SignIn_DoNe") {
                                 ?>
 
@@ -105,9 +122,6 @@
 
                             <div class="col-xl-4 col-lg-4 d-none d-lg-block">
                                 <div class="social_wrap d-flex align-items-center justify-content-end">
-                                    <!--<div class="number">
-                                        <p> <i class="fa fa-phone"></i> 10(256)-928 256</p>
-                                    </div>-->
                                     <div class="social_links d-none d-xl-block">
                                         <ul>
                                             <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
@@ -122,6 +136,7 @@
                             <?php
                             }
                             ?>
+                        -->
 
                             
 
@@ -144,53 +159,6 @@
     </header>
     <!-- header-end -->
 
-    <!-- slider_area_start -->
-    <div class="slider_area">
-        <div class="slider_active owl-carousel">
-            <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-xl-12 col-md-12">
-                            <div class="slider_text text-center">
-                                <h3>Coffee-HUB</h3>
-                                <p>Welcome to the coffee-hub official website</p>
-                                <!--<a href="#" class="boxed-btn3">Explore Now</a>-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single_slider  d-flex align-items-center slider_bg_2 overlay">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-xl-12 col-md-12">
-                            <div class="slider_text text-center">
-                                <h3>Coffee-HUB</h3>
-                                <p>Welcome to the coffee-hub official website</p>
-                                <!--<a href="#" class="boxed-btn3">Explore Now</a>-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single_slider  d-flex align-items-center slider_bg_3 overlay">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-xl-12 col-md-12">
-                            <div class="slider_text text-center">
-                                <h3>Coffee-HUB</h3>
-                                <p>Welcome to the coffee-hub official website</p>
-                                <!--<a href="#" class="boxed-btn3">Explore Now</a>-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- slider_area_end -->
-
 <?= $contents; ?>
 
     <footer class="footer">
@@ -201,7 +169,7 @@
                         <div class="footer_widget">
                             <div class="footer_logo">
                                 <a href="#">
-                                    <img style="width: 180px;" src="<?php echo base_url('assets/back_end/images/logo-DASH.png') ?>" alt="">
+                                    <img style="height: 120px;" src="<?php echo base_url('assets/front_end/img/coffee_hub.png') ?>" alt="">
                                 </a>
                             </div>
                             <p>Jl. PB. Sudirman 90, Jember 68118<br>
@@ -209,48 +177,17 @@
                                 <a href="#">Fax : (0331) - 757131</a> <br>
                                 <a href="#">E-Mail : iccri@iccri.net</a>
                             </p>
-                            <!--
-                            <div class="socail_links">
-                                <ul>
-                                    <li>
-                                        <a href="#">
-                                            <i class="ti-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="ti-twitter-alt"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-pinterest"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-youtube-play"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        -->
-
                         </div>
                     </div>
+
                     <div class="col-xl-2 col-md-6 col-lg-2">
                         <div class="footer_widget">
                             <h3 class="footer_title">
                                 Butuh Bantuan ?
                             </h3>
                             <ul class="links">
-                                <li><a href="<?php echo base_url('home/hubungi_kami') ?>">Hubungi Kami</a></li>
-                                <li><a href="<?php echo base_url('home/tentang_kami') ?>">Tentang Kami</a></li>
+                                <li><a href="<?php echo base_url('hubungi_kami') ?>">Hubungi Kami</a></li>
+                                <li><a href="<?php echo base_url('tentang_kami') ?>">Tentang Kami</a></li>
                             </ul>
                         </div>
                     </div>
@@ -317,7 +254,7 @@
                     <div class="col-xl-12">
                         <p class="copy_right text-center">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank">&nbsp;&nbsp;Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
