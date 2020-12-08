@@ -43,7 +43,7 @@
 
     <!-- header-start -->
     <header>
-        <div class="header-area ">
+        <div class="header-area">
             <div id="sticky-header" class="main-header-area">
                 <div class="container-fluid">
                     <div class="header_bottom_border">
@@ -169,20 +169,20 @@
                         <div class="footer_widget">
                             <div class="footer_logo">
                                 <a href="#">
-                                    <img style="height: 120px;" src="<?php echo base_url('assets/front_end/img/coffee_hub.png') ?>" alt="">
+                                    <img style="height: 120px; padding: 15px; background-color: white; border-radius: 20px; border-color: white;" src="<?php echo base_url('assets/front_end/img/coffee_hub.png') ?>" alt="">
                                 </a>
                             </div>
-                            <p>Jl. PB. Sudirman 90, Jember 68118<br>
-                                <a href="#">Telp : (0331) 757130, 757132</a> <br>
-                                <a href="#">Fax : (0331) - 757131</a> <br>
-                                <a href="#">E-Mail : iccri@iccri.net</a>
+                            <p style="color: white;">Jl. PB. Sudirman 90, Jember 68118<br>
+                                Telp : (0331) 757130, 757132<br>
+                                Fax : (0331) - 757131<br>
+                                E-Mail : iccri@iccri.net
                             </p>
                         </div>
                     </div>
 
                     <div class="col-xl-2 col-md-6 col-lg-2">
                         <div class="footer_widget">
-                            <h3 class="footer_title">
+                            <h3 class="footer_title" style="color: #F16A2A;">
                                 Butuh Bantuan ?
                             </h3>
                             <ul class="links">
@@ -193,7 +193,7 @@
                     </div>
                     <div class="col-xl-3 col-md-6 col-lg-3">
                         <div class="footer_widget">
-                            <h3 class="footer_title" style="text-align: center;">
+                            <h3 class="footer_title" style="text-align: center; color: #F16A2A;">
                                 Sosial Media
                             </h3>
                             <ul class="links double_links" style="text-align: center;">
@@ -206,7 +206,7 @@
                     </div>
                     <div class="col-xl-3 col-md-6 col-lg-3">
                         <div class="footer_widget">
-                            <h3 class="footer_title">
+                            <h3 class="footer_title" style="color: #F16A2A;">
                                 Coffe-HUB
                             </h3>
                             <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel augue interdum neque iaculis consequat sed eu nisi. Pellentesque aliquam massa ac sem molestie maximus.</p>-->
@@ -254,8 +254,8 @@
                     <div class="col-xl-12">
                         <p class="copy_right text-center">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
                 </div>
