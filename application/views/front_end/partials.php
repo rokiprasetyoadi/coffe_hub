@@ -247,7 +247,7 @@
                 </div>
             </div>
         </div>
-        <div class="copy-right_text">
+        <div class="copy-right_text" hidden>
             <div class="container">
                 <div class="footer_border"></div>
                 <div class="row">

@@ -736,6 +736,8 @@
     <script type="text/javascript" src="<?php echo base_url('assets/back_end/js/data-tables/jquery.dataTables.js') ?>"></script>
     <script type="text/javascript" src="<?php echo base_url('assets/back_end/js/data-tables/DT_bootstrap.js') ?>"></script>
 
+    <script src="<?php echo base_url('assets/back_end/ckeditor/ckeditor.js') ?>"></script>
+
     <!--common script init for all pages-->
     <script src="<?php echo base_url('assets/back_end/js/scripts.js') ?>"></script>
     <!--script for this page-->

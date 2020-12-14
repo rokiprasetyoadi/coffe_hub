@@ -37,7 +37,7 @@
                                     <div class="form-group ">
                                         <label for="agenda_keterangan" class="control-label col-lg-3">Keterangan</label>
                                         <div class="col-lg-6">
-                                            <textarea style="width: 400px; height: 100px;" name="agenda_keterangan" id="agenda_keterangan"></textarea>
+                                            <textarea class="ckeditor" style="width: 400px; height: 100px;" name="agenda_keterangan" id="agenda_keterangan"></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group ">
@@ -107,7 +107,7 @@
                                     <div class="form-group ">
                                         <label for="agenda_keterangan" class="control-label col-lg-3">Keterangan</label>
                                         <div class="col-lg-6">
-                                            <textarea style="width: 400px; height: 100px;" name="agenda_keterangan" id="agenda_keterangan"><?= $row->agenda_keterangan; ?></textarea>
+                                            <textarea class="ckeditor" style="width: 400px; height: 100px;" name="agenda_keterangan" id="agenda_keterangan"><?= $row->agenda_keterangan; ?></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group ">

@@ -14,6 +14,10 @@
 
 <?php foreach($detail_agenda as $row){?>
 
+	<?php 
+	$agenda_jam = (explode(':', $row->agenda_jam));
+	?>
+
 <?php } ?>
 
     <div class="whole-wrap">
@@ -35,16 +39,17 @@
 						    <tr>
 						      <th scope="row">Tanggal</th>
 						      <td>:</td>
-						      <td><?php echo $row->agenda_tanggal; ?></td>
+						      <td><?php $date = date_create ($row->agenda_tanggal); echo date_format ($date, "d F Y"); ?></td>
 						    </tr>
 						    <tr>
 						      <th scope="row">Jam</th>
 						      <td>:</td>
-						      <td><?php echo $row->agenda_jam; ?></td>
+						      <td><?php echo $row->agenda_jam[0] ?><?php echo $row->agenda_jam[1] ?>:<?php echo $row->agenda_jam[3] ?><?php echo $row->agenda_jam[4] ?>&nbsp;WIB</td>
 						    </tr>
 						  </tbody>
 						</table>
-						<p style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $row->agenda_keterangan; ?></p>
+						<?php echo htmlspecialchars_decode(htmlspecialchars_decode($row->agenda_keterangan))
+						?>
 
 					</div>
 				</div>

@@ -60,7 +60,7 @@
 						    </tr>
 						  </tbody>
 						</table>
-						<p style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $row->catalog_deskripsi; ?></p>
+						<label style="text-align: justify;"><?php echo htmlspecialchars_decode(htmlspecialchars_decode($row->catalog_deskripsi)) ?></label>
 
 
 				<div class="section-top-border" style="margin-top: 10px;">

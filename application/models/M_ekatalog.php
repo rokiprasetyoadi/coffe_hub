@@ -116,8 +116,7 @@
             'catalog_sertifikat' => htmlspecialchars($this->input->post('catalog_sertifikat', true)),
             'catalog_deskripsi' => htmlspecialchars($this->input->post('catalog_deskripsi', true)),
             'catalog_img' => $this->_uploadImage(),
-            'catalog_video' => htmlspecialchars($this->input->post('catalog_video', true)),
-            'catalog_created' => date('d-m-Y H:i:s')
+            'catalog_video' => htmlspecialchars($this->input->post('catalog_video', true))
         ];
 
         $this->db->insert('e_catalog', $data); // query untuk insert data ke tabel barang

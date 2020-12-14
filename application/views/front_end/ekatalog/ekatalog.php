@@ -35,9 +35,9 @@
                             <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>" class="prise"><?php echo $k->catalog_jenis_kopi ?></a>
                         </div>
                     </a>
-                        <div class="place_info">
+                        <div class="place_info" style="height: 220px;">
                             <a href="<?php echo site_url('front_end/ekatalog/detail_ekatalog/'.$k->catalog_id) ?>"><h3><?php echo $k->catalog_nama_kopi ?></h3></a>
-                            <p style="height: 120px;"><?php echo substr($k->catalog_deskripsi,0,150); ?>&nbsp;...</p>
+                            <p><?php echo htmlspecialchars_decode(htmlspecialchars_decode( substr($k->catalog_deskripsi,0,150))); ?>&nbsp;...</p>
                             <div class="rating_days d-flex justify-content-between">
                                 <span class="d-flex justify-content-center align-items-center">
                                      
